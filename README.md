@@ -24,5 +24,5 @@ If you face any issues or have any suggestions, please feel free to open an issu
 [MIT License](https://choosealicense.com/licenses/mit/)
 
 ## More questions?
-If you want to contact me you can reach me at [darpanja@usc.edu](darpanja@usc.edu) or visit the [`Reach Out`](https://darpanjain.me/#contact-section) section on [my website](https://darpanjain.me).
+If you want to contact me you can reach me via [email](darpan.pmun@gmail.com) or visit the [`Reach Out`](https://darpanjain.me/#contact-section) section on [my website](https://darpanjain.me).
 
