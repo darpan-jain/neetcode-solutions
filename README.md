@@ -9,7 +9,7 @@ This is a list of 75 questions popularly known as the `Blind 75` list by [Neetco
 - I would recommend you to try to solve the questions on your own first, and then refer to the solutions here. This will help you understand the concepts better.
 - You can find the list of questions that are covered in this repo [here](questions_list.md)
 
-_Pro tip_: Try to explain the approach to another person or to yourself! You'd be surprised how much you learn by doing this.
+_Pro tip_: Try to explain the approach to another person or to yourself (out loud). You'd be surprised how much you learn by doing this!
 
 ## How to contribute?
 
