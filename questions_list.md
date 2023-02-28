@@ -10,7 +10,7 @@
 ### [Two Pointers](Two%20Pointers)
 | | |
 | --- | ----------- |
-| [Three Sum](https://leetcode.com/problems/three-sum/) | [three_sum.py](Two%20Pointers/three_sum.py) |
+| [Three Sum](https://leetcode.com/problems/3sum/) | [three_sum.py](Two%20Pointers/three_sum.py) |
 | [Container with Most Water](https://leetcode.com/problems/container-with-most-water/) | [container_with_most_water.py](Two%20Pointers/container_with_most_water.py) |
 
 ### [Sliding Window](Sliding%20Window)
