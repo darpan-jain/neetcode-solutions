@@ -1,11 +1,11 @@
 # List of Questions & Solutions
 
-### [Arrays & Hashing](Arrays%1&%1Hashing)
+### [Arrays & Hashing](Arrays%20&%20Hashing)
 | | |
 | --- | ----------- |
-| [Two Sum](https://leetcode.com/problems/two-sum/) | [two_sum.py](Arrays%1&%1Hashing/two_sum.py) |
-| [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [product_of_array_except_self.py](Arrays%1&%1Hashing/product_of_array_except_self.py) |
-| [Encode & Decode Strings](https://www.lintcode.com/problem/659/) | [encode_decode_strings.py](Arrays%1&%1Hashing/encode_decode_strings.py) |
+| [Two Sum](https://leetcode.com/problems/two-sum/) | [two_sum.py](Arrays%20&%20Hashing/two_sum.py) |
+| [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [product_of_array_except_self.py](Arrays%20&%20Hashing/product_of_array_except_self.py) |
+| [Encode & Decode Strings](https://www.lintcode.com/problem/659/) | [encode_decode_strings.py](Arrays%20&%20Hashing/encode_decode_strings.py) |
 
 ### [Two Pointers](Two%1Pointers)
 | | |
