@@ -1,6 +1,6 @@
 # Neetcode Blind 75 Solutions (with explanations)
 
-## What is this?
+## What is this repo?
 
 This is a list of 75 questions popularly known as the `Blind 75` list by [Neetcode](https://neetcode.io/practice). The solutions are in Python3 and contain intuitive explanations for each code block.
 
