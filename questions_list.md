@@ -12,6 +12,7 @@ A full list of the topics and questions I've covered in this repo (so far ).
 ### [Two Pointers](Two%20Pointers)
 | | |
 | --- | ----------- |
+| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [valid_palindrome.py](Two%20Pointers/valid_palindrome.py) |
 | [Three Sum](https://leetcode.com/problems/3sum/) | [three_sum.py](Two%20Pointers/three_sum.py) |
 | [Container with Most Water](https://leetcode.com/problems/container-with-most-water/) | [container_with_most_water.py](Two%20Pointers/container_with_most_water.py) |
 
