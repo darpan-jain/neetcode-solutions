@@ -64,3 +64,5 @@ A full list of the topics and questions covered in this repo (so far).
 | [Decode Ways](https://leetcode.com/problems/decode-ways/) | [decode_ways.py](1-D%20Dynamic%20Programming/decode_ways.py) |
 | [Coin Change](https://leetcode.com/problems/coin-change/) | [coin_change.py](1-D%20Dynamic%20Programming/coin_change.py) |
 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | [max_product_subarray.py](1-D%20Dynamic%20Programming/max_product_subarray.py) |
+| [Word Break](https://leetcode.com/problems/word-break/) | [word_break.py](1-D%20Dynamic%20Programming/word_break.py) |
+| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | [longest_increasing_subsequence.py](1-D%20Dynamic%20Programming/longest_increasing_subsequence.py) |
