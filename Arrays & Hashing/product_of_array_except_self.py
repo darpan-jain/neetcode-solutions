@@ -37,9 +37,9 @@ class Solution:
         # Again, start with an initial postfix value of 1 (remember: we are finding product)
         postfix = 1
         
-        # Iterate in reverse since postfix (since we want every element's postfix value)
+        # Iterate in reverse since postfix (since we want every element's POSTfix value)
         for i in range(n-1, -1, -1):
-            # Update and store value in ith position of 'res' by multiplying with postfix value
+            # Update and store value in ith position of `res` by multiplying with postfix value
             result[i] *= postfix
             # Update postfix value for the next element
             postfix *= nums[i]
