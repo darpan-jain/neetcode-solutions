@@ -61,3 +61,6 @@ A full list of the topics and questions covered in this repo (so far).
 | [House Robber II](https://leetcode.com/problems/house-robber-ii/) | [house_robber_ii.py](1-D%20Dynamic%20Programming/house_robber_ii.py) |
 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [longest_palindromic_substring.py](1-D%20Dynamic%20Programming/longest_palindromic_substring.py) |
  |[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) | [palindromic_substrings.py](1-D%20Dynamic%20Programming/palindromic_substrings.py) |
+| [Decode Ways](https://leetcode.com/problems/decode-ways/) | [decode_ways.py](1-D%20Dynamic%20Programming/decode_ways.py) |
+| [Coin Change](https://leetcode.com/problems/coin-change/) | [coin_change.py](1-D%20Dynamic%20Programming/coin_change.py) |
+| [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | [max_product_subarray.py](1-D%20Dynamic%20Programming/max_product_subarray.py) |
