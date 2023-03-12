@@ -1,5 +1,7 @@
 # List of Questions & Solutions
 
+A full list of the topics and questions I've covered in this repo (so far ).
+
 ### [Arrays & Hashing](Arrays%20&%20Hashing)
 | | |
 | --- | ----------- |
