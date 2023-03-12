@@ -51,3 +51,13 @@ A full list of the topics and questions covered in this repo (so far).
 | --- | ----------- |
 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | [combination_sum.py](Backtracking/combination_sum.py) |
 | [Word Search](https://leetcode.com/problems/word-search/) | [word_search.py](Backtracking/word_search.py) |
+
+## [1-D Dynamic Programming](1-D%20Dynamic%20Programming)
+
+| | |
+| --- | ----------- |
+| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [climbing_stairs.py](1-D%20Dynamic%20Programming/climbing_stairs.py) |
+| [House Robber](https://leetcode.com/problems/house-robber/) | [house_robber.py](1-D%20Dynamic%20Programming/house_robber.py) |
+| [House Robber II](https://leetcode.com/problems/house-robber-ii/) | [house_robber_ii.py](1-D%20Dynamic%20Programming/house_robber_ii.py) |
+| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [longest_palindromic_substring.py](1-D%20Dynamic%20Programming/longest_palindromic_substring.py) |
+ |[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) | [palindromic_substrings.py](1-D%20Dynamic%20Programming/palindromic_substrings.py) |
