@@ -35,7 +35,7 @@ A full list of the topics and questions I've covered in this repo (so far ).
 | --- | ----------- |
 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [min_in_rotated_array.py](Binary%20Search/min_in_rotated_array.py) |
 
-## [Linked List](Linked%20List)
+### [Linked List](Linked%20List)
 
 | | |
 | --- | ----------- |
@@ -43,6 +43,11 @@ A full list of the topics and questions I've covered in this repo (so far ).
 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [merge_two_sorted_lists.py](Linked%20List/merge_two_sorted_lists.py) |
 
 
-## 
+### [Backtracking](Backtracking)
+
+| | |
+| --- | ----------- |
+| [Combination Sum](https://leetcode.com/problems/combination-sum/) | [combination_sum.py](Backtracking/combination_sum.py) |
+| [Word Search](https://leetcode.com/problems/word-search/) | [word_search.py](Backtracking/word_search.py) |
 
 
