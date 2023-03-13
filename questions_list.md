@@ -1,6 +1,6 @@
-# List of Questions & Solutions
+# List of Questions & Solutions (in progress) 
 
-A full list of the topics and questions covered in this repo (so far).
+A full list of the topics and questions covered in this repo (so far). **Solutions counter - 36/75**
 
 ---
 
@@ -41,6 +41,16 @@ A full list of the topics and questions covered in this repo (so far).
 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [reverse_linked_list.py](Linked%20List/reverse_linked_list.py) |
 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [merge_two_sorted_lists.py](Linked%20List/merge_two_sorted_lists.py) |
 
+## [Trees](Trees)
+| | |
+| --- | ----------- |
+| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | [invert_binary_tree.py](Trees/invert_binary_tree.py) |
+| [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [max_depth_of_binary_tree.py](Trees/max_depth_of_binary_tree.py) |
+| [Same Tree](https://leetcode.com/problems/same-tree/) | [same_tree.py](Trees/same_tree.py) |
+| [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) | [subtree_of_another_tree.py](Trees/subtree_of_another_tree.py) |
+| [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [lowest_common_ancestor_of_bst.py](Trees/lowest_common_ancestor_of_bst.py) |
+| [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [binary_tree_level_order_traversal.py](Trees/binary_tree_level_order_traversal.py) |
+| [Validate Binary Search Tree](https://leetcode.com/problems/valid-binary-search-tree/) | [valid_bst.py](Trees/valid_bst.py) |
 
 ## [Backtracking](Backtracking)
 | | |
@@ -67,3 +77,9 @@ A full list of the topics and questions covered in this repo (so far).
 | --- | ----------- |
 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [maximum_subarray.py](Greedy/maximum_subarray.py) |
 | [Jump Game](https://leetcode.com/problems/jump-game/) | [jump_game.py](Greedy/jump_game.py)
+
+## [Intervals](Intervals)
+| | |
+| --- | ----------- |
+| [Insert Interval](https://leetcode.com/problems/insert-interval/) | [insert_interval.py](Intervals/insert_interval.py) |
+| [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [merge_intervals.py](Intervals/merge_intervals.py) |
