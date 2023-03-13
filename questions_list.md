@@ -26,19 +26,16 @@ A full list of the topics and questions covered in this repo (so far).
 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | [longest_repeating_character_replacement.py](Sliding%20Window/longest_repeating_character_replacement.py) |
 
 ## [Stack](Stack)
-
 | | |
 | --- | ----------- |
 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [valid_parentheses.py](Stack/valid_parentheses.py) |
 
 ## [Binary Search](Binary%20Search)
-
 | | |
 | --- | ----------- |
 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [min_in_rotated_array.py](Binary%20Search/min_in_rotated_array.py) |
 
 ## [Linked List](Linked%20List)
-
 | | |
 | --- | ----------- |
 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [reverse_linked_list.py](Linked%20List/reverse_linked_list.py) |
@@ -46,14 +43,12 @@ A full list of the topics and questions covered in this repo (so far).
 
 
 ## [Backtracking](Backtracking)
-
 | | |
 | --- | ----------- |
 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | [combination_sum.py](Backtracking/combination_sum.py) |
 | [Word Search](https://leetcode.com/problems/word-search/) | [word_search.py](Backtracking/word_search.py) |
 
 ## [1-D Dynamic Programming](1-D%20Dynamic%20Programming)
-
 | | |
 | --- | ----------- |
 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [climbing_stairs.py](1-D%20Dynamic%20Programming/climbing_stairs.py) |
@@ -66,3 +61,9 @@ A full list of the topics and questions covered in this repo (so far).
 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | [max_product_subarray.py](1-D%20Dynamic%20Programming/max_product_subarray.py) |
 | [Word Break](https://leetcode.com/problems/word-break/) | [word_break.py](1-D%20Dynamic%20Programming/word_break.py) |
 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | [longest_increasing_subsequence.py](1-D%20Dynamic%20Programming/longest_increasing_subsequence.py) |
+
+## [Greedy](Greedy)
+| | |
+| --- | ----------- |
+| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [maximum_subarray.py](Greedy/maximum_subarray.py) |
+| [Jump Game](https://leetcode.com/problems/jump-game/) | [jump_game.py](Greedy/jump_game.py)
