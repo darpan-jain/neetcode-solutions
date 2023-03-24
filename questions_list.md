@@ -45,6 +45,10 @@ A full list of the topics and questions covered in this repo (so far). **Solutio
 | --- | ----------- |
 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [reverse_linked_list.py](Linked%20List/reverse_linked_list.py) |
 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [merge_two_sorted_lists.py](Linked%20List/merge_two_sorted_lists.py) |
+| [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [remove_nth_node_from_end_of_list.py](Linked%20List/remove_nth_node_from_end_of_list.py) |
+| [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [linked_list_cycle.py](Linked%20List/linked_list_cycle.py) |
+| [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | [merge_k_sorted_lists.py](Linked%20List/merge_k_sorted_lists.py) |
+
 
 ## [Trees](Trees)
 | | |
