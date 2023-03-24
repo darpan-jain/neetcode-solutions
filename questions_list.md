@@ -7,9 +7,14 @@ A full list of the topics and questions covered in this repo (so far). **Solutio
 ## [Arrays & Hashing](Arrays%20&%20Hashing)
 | | |
 | --- | ----------- |
+| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | [contains_duplicate.py](Arrays%20&%20Hashing/contains_duplicate.py) |
+| [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | [valid_anagram.py](Arrays%20&%20Hashing/valid_anagram.py) |
 | [Two Sum](https://leetcode.com/problems/two-sum/) | [two_sum.py](Arrays%20&%20Hashing/two_sum.py) |
+| [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [group_anagrams.py](Arrays%20&%20Hashing/group_anagrams.py) |
+| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [top_k_frequent_elements.py](Arrays%20&%20Hashing/top_k_frequent_elements.py) |
 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [product_of_array_except_self.py](Arrays%20&%20Hashing/product_of_array_except_self.py) |
 | [Encode & Decode Strings](https://www.lintcode.com/problem/659/) | [encode_decode_strings.py](Arrays%20&%20Hashing/encode_decode_strings.py) |
+| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | [longest_consecutive_sequence.py](Arrays%20&%20Hashing/longest_consecutive_sequence.py) |
 
 ## [Two Pointers](Two%20Pointers)
 | | |
