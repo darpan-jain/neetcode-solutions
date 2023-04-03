@@ -100,3 +100,4 @@ A full list of the topics and questions covered in this repo (so far). **Solutio
 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | [number_of_1_bits.py](Bit%20Manipulation/number_of_1_bits.py) |
 | [Counting Bits](https://leetcode.com/problems/counting-bits/) | [counting_bits.py](Bit%20Manipulation/counting_bits.py) |
 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/) | [reverse_bits.py](Bit%20Manipulation/reverse_bits.py) |
+| [Missing Number](https://leetcode.com/problems/missing-number/) | [missing_number.py](Bit%20Manipulation/missing_number.py) |
