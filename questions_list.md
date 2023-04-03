@@ -1,6 +1,6 @@
 # List of Questions & Solutions (in progress) 
 
-A full list of the topics and questions covered in this repo (so far). **Solutions counter - 43/75**
+A full list of the topics and questions covered in this repo (so far). **Solutions counter - 46/75**
 
 ---
 
@@ -29,6 +29,7 @@ A full list of the topics and questions covered in this repo (so far). **Solutio
 | [Best time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [best_buy_sell_stock.py](Sliding%20Window/best_buy_sell_stock.py) |
 | [Longest Substring w/o Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [longest_substr_without_repeating_chars.py](Sliding%20Window/longest_substr_without_repeating_chars.py) |
 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | [longest_repeating_character_replacement.py](Sliding%20Window/longest_repeating_character_replacement.py) |
+| [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | [minimum_window_substring.py](Sliding%20Window/minimum_window_substring.py) |
 
 ## [Stack](Stack)
 | | |
@@ -92,3 +93,10 @@ A full list of the topics and questions covered in this repo (so far). **Solutio
 | --- | ----------- |
 | [Insert Interval](https://leetcode.com/problems/insert-interval/) | [insert_interval.py](Intervals/insert_interval.py) |
 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [merge_intervals.py](Intervals/merge_intervals.py) |
+
+## [Bit Manipulation](Bit%20Manipulation)
+| | |
+| --- | ----------- |
+| [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | [number_of_1_bits.py](Bit%20Manipulation/number_of_1_bits.py) |
+| [Counting Bits](https://leetcode.com/problems/counting-bits/) | [counting_bits.py](Bit%20Manipulation/counting_bits.py) |
+| [Reverse Bits](https://leetcode.com/problems/reverse-bits/) | [reverse_bits.py](Bit%20Manipulation/reverse_bits.py) |
