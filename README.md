@@ -2,7 +2,7 @@
 
 ## What is this repo?
 
-This is a list of 150 questions (in-progress) by [Neetcode](https://neetcode.io/practice). The solutions are in Python3 and contain intuitive explanations for each code block.
+This is a list of 150 solutions (in-progress) for the list by [Neetcode](https://neetcode.io/practice). The solutions are in Python3 and contain intuitive explanations for each code block.
 
 ## How to use this repo?
 - I recommend using the solutions here as a pointer for your interview preparation for Software Engineering roles. 
