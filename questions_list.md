@@ -13,6 +13,7 @@ A full list of the topics and questions covered in this repo (so far). **Solutio
 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [group_anagrams.py](Arrays%20&%20Hashing/group_anagrams.py) |
 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [top_k_frequent_elements.py](Arrays%20&%20Hashing/top_k_frequent_elements.py) |
 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [product_of_array_except_self.py](Arrays%20&%20Hashing/product_of_array_except_self.py) |
+| [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | [valid_sudoku.py](Arrays%20&%20Hashing/valid_sudoku.py) |
 | [Encode & Decode Strings](https://www.lintcode.com/problem/659/) | [encode_decode_strings.py](Arrays%20&%20Hashing/encode_decode_strings.py) |
 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | [longest_consecutive_sequence.py](Arrays%20&%20Hashing/longest_consecutive_sequence.py) |
 
@@ -20,8 +21,10 @@ A full list of the topics and questions covered in this repo (so far). **Solutio
 | | |
 | --- | ----------- |
 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [valid_palindrome.py](Two%20Pointers/valid_palindrome.py) |
+| [Two Sum II (Input Array Sorted)](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [two_sum_ii_input_sorted.py](Two%20Pointers/two_sum_ii_input_sorted.py) | 
 | [Three Sum](https://leetcode.com/problems/3sum/) | [three_sum.py](Two%20Pointers/three_sum.py) |
 | [Container with Most Water](https://leetcode.com/problems/container-with-most-water/) | [container_with_most_water.py](Two%20Pointers/container_with_most_water.py) |
+| [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | [trapping_rain_water.py](Two%20Pointers/trapping_rain_water.py) |
 
 ## [Sliding Window](Sliding%20Window)
 | | |
@@ -29,7 +32,9 @@ A full list of the topics and questions covered in this repo (so far). **Solutio
 | [Best time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [best_buy_sell_stock.py](Sliding%20Window/best_buy_sell_stock.py) |
 | [Longest Substring w/o Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [longest_substr_without_repeating_chars.py](Sliding%20Window/longest_substr_without_repeating_chars.py) |
 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | [longest_repeating_character_replacement.py](Sliding%20Window/longest_repeating_character_replacement.py) |
+| [Permuatation in String](https://leetcode.com/problems/permutation-in-string/submissions/) | [permutation_in_strings.py](Sliding%20Window/permutation_in_strings.py) |
 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | [minimum_window_substring.py](Sliding%20Window/minimum_window_substring.py) |
+| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | [sliding_window_maximum.py](Sliding%20Window/sliding_window_maximum.py) |
 
 ## [Stack](Stack)
 | | |
