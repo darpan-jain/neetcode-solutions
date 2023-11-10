@@ -1,4 +1,4 @@
-# Neetcode Solutions (with explanations)
+# Neetcode Solutions + Explanations
 
 ## What is this repo?
 
