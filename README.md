@@ -24,5 +24,4 @@ If you face any issues or have any suggestions, please feel free to open an issu
 [MIT License](https://choosealicense.com/licenses/mit/)
 
 ## More questions?
-If you want to contact me you can reach me via [email](mailto:darpan.pmun@gmail.com) or visit the [`Reach Out`](https://darpanjain.com/#contact-section) section on [my website](https://darpanjain.com).
-
+If you want to contact me, you can reach me via [email](mailto:darpannjainn@gmail.com) or visit the [`Reach Out`](https://darpanjain.com/#contact-section) section on [my website](https://darpanjain.com).
