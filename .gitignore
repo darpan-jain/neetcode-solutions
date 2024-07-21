@@ -130,3 +130,12 @@ dmypy.json
 .DS_Store
 .vscode/settings.json
 .vscode/*
+/.idea/.gitignore
+/.idea/git_toolbox_blame.xml
+/.idea/material_theme_project_new.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/neetcode-solutions.iml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml
