@@ -1,8 +1,9 @@
-'''
-Question: https://leetcode.com/problems/encode-and-decode-strings/ (Leetcode Premium) 
-                                OR 
-          https://www.lintcode.com/problem/659/ (Free by Lintcode)
-'''
+"""
+Question: https://leetcode.com/problems/encode-and-decode-strings/ (Leetcode Premium)
+                                OR
+          https://neetcode.io/problems/string-encode-and-decode (Free by Neetcode)
+"""
+
 
 class Solution:
 
