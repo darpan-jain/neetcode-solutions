@@ -1,4 +1,4 @@
-# List of Questions & Solutions (in progress) 
+# List of Questions & Solutions
 
 A full list of the topics and questions covered in this repo (so far). **Solutions counter - 46/75**
 
@@ -41,10 +41,11 @@ A full list of the topics and questions covered in this repo (so far). **Solutio
 | --- | ----------- |
 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [valid_parentheses.py](stack/valid_parentheses.py) |
 
-## [Binary Search](Binary%20Search)
-| | |
-| --- | ----------- |
-| [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [min_in_rotated_array.py](Binary%20Search/min_in_rotated_array.py) |
+## [Binary Search](binary_search)
+| |                                                                               |
+| --- |-------------------------------------------------------------------------------|
+| [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [min_in_rotated_array.py](binary_search/min_in_rotated_array.py)              |
+| [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [search_in_rotated_array.py](binary_search/search_in_rotated_sorted_array.py) |
 
 ## [Linked Lists](linked_lists)
 | | |
@@ -72,6 +73,13 @@ A full list of the topics and questions covered in this repo (so far). **Solutio
 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | [combination_sum.py](backtracking/combination_sum.py) |
 | [Word Search](https://leetcode.com/problems/word-search/) | [word_search.py](backtracking/word_search.py) |
 
+## [Tries](tries)
+| |                                                |
+| --- |------------------------------------------------|
+| [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | [implement_trie.py](tries/implement_trie.py)   |
+| [Add and Search Word - Data Structure Design](https://leetcode.com/problems/design-add-and-search-words-data-structure/description/) | [add_search_word.py](tries/add_search_word.py) |
+| [Word Search II](https://leetcode.com/problems/word-search-ii/) | [word_search_ii.py](tries/word_search_ii.py)   |
+
 ## [1-D Dynamic Programming](1d_dynamic_programming)
 | | |
 | --- | ----------- |
@@ -85,6 +93,12 @@ A full list of the topics and questions covered in this repo (so far). **Solutio
 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | [max_product_subarray.py](1d_dynamic_programming/max_product_subarray.py) |
 | [Word Break](https://leetcode.com/problems/word-break/) | [word_break.py](1d_dynamic_programming/word_break.py) |
 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | [longest_increasing_subsequence.py](1d_dynamic_programming/longest_increasing_subsequence.py) |
+
+## [2-D Dynamic Programming](2d_dynamic_programming)
+|                                                                                        | |
+|----------------------------------------------------------------------------------------| ----------- |
+| [Unique Paths](https://leetcode.com/problems/unique-paths/)                        | [unique_paths.py](2d_dynamic_programming/unique_paths.py) |
+| [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | [longest_common_subsequence.py](2d_dynamic_programming/longest_common_subsequence.py) |
 
 ## [Greedy](greedy)
 | | |
