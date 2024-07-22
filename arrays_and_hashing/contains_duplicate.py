@@ -5,7 +5,7 @@ Question: https://leetcode.com/problems/contains-duplicate/
 from typing import List
 
 
-def containsDuplicate(self, nums: List[int]) -> bool:
+def containsDuplicate(nums: List[int]) -> bool:
 
     """ Approach 1: Use set since it only holds unique values """
 
