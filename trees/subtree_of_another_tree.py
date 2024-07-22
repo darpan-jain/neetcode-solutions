@@ -36,7 +36,7 @@ class Solution:
     
 
     # Helper function to check if `p` and `q` are the same trees.
-    # Refer to https://leetcode.com/problems/same-tree/ and `Trees/same_tree.py`
+    # Refer to https://leetcode.com/problems/same-tree/ and `trees/same_tree.py`
     def isSameTree(self, p, q):
 
         if not p and not q:

@@ -19,7 +19,7 @@ class Solution:
         # The reverse LL is being stored in the 'prev' pointer
         prev, curr = None, head
         
-        # Iterate until we reach the end of the Linked List
+        # Iterate until we reach the end of the linked_lists
         while curr:
             ''' We move prev -> curr (the reversal step) and move curr -> curr.next '''
 

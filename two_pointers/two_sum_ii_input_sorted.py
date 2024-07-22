@@ -9,7 +9,7 @@ class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         '''
         Use two pointers and take advantage of the array being sorted. 
-        i.e. perform a Binary Search on the array.
+        i.e. perform a binary_search on the array.
 
         Time Complexity: O(n)
         '''

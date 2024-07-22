@@ -5,11 +5,11 @@ Question: https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
 class Solution:
     def findMin(self, nums: List[int]) -> int:
         '''
-        Use the Binary Search, while looking for the minimum.
+        Use the binary_search, while looking for the minimum.
         Time Complexity: O(log n)
         '''
         
-        # Init two pointers to perform Binary Search
+        # Init two pointers to perform binary_search
         start, end = 0, len(nums) - 1
 
         # Init result to +infinity (since we are looking for minimum)
