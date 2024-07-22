@@ -112,6 +112,12 @@ A full list of the topics and questions covered in this repo (so far). **Solutio
 | [Insert Interval](https://leetcode.com/problems/insert-interval/) | [insert_interval.py](intervals/insert_interval.py) |
 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [merge_intervals.py](intervals/merge_intervals.py) |
 
+## [Math & Geometry](math_and_geometry)
+|                  | |
+|------------------| ----------- |
+| [Rotate Image](https://leetcode.com/problems/rotate-image/) | [rotate_image.py](math_and_geometry/rotate_image.py) |
+| [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | [spiral_matrix.py](math_and_geometry/spiral_matrix.py) |
+
 ## [Bit Manipulation](bit_manipulation)
 | | |
 | --- | ----------- |
