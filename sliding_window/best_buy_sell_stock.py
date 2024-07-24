@@ -1,6 +1,6 @@
-'''
+"""
 Question: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
-'''
+"""
 
 from typing import List
 
@@ -17,6 +17,6 @@ class Solution:
                 buy = curr_price
                 
             # Keep updating profit to 'max b/w (curr buy price - previous buy price) and profit'
-            profit = max( (curr_price - buy), profit )
+            profit = max((curr_price - buy), profit)
 
         return profit
