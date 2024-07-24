@@ -1,10 +1,10 @@
-'''
+"""
 Question: https://leetcode.com/problems/longest-repeating-character-replacement/
-'''
+"""
 
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
-        '''
+        """
         Sliding window approach with two pointers. 
         The pointers start from element 0 and right pointer is moved right everytime until
         we meet the condition -> number of replacements required in current window <= k
@@ -12,10 +12,10 @@ class Solution:
         Here, the number of required to replace should be less than the max allowed replacements (i.e. k)
         calculated using -> (window_size - count of most occuring character in the window)
         
-        Time complexity: O(n)
-        '''
+        Time complexity: O(N)
+        """
         
-        # Dict 'count' to store the frequency of the characters in the current window
+        # Dict `count` to store the frequency of the characters in the current window
         count = {}
         
         max_len = 0
@@ -42,6 +42,6 @@ class Solution:
                 l += 1
 
             # Update the max_len by comparing with current window size
-            max_len = max( max_len, r-l+1 )
+            max_len = max(max_len, r-l+1)
                    
         return max_len
