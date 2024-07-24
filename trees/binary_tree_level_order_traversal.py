@@ -1,24 +1,31 @@
-'''
+"""
 Question: https://leetcode.com/problems/binary-tree-level-order-traversal/
-'''
+"""
 
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+
+from typing import List, Optional
+from collections import deque
+
+
+class TreeNode:
+    """
+    Definition for a binary tree node.
+    """
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
 
 
 class Solution:
-    '''
-    Since it's 'level' order, we use BFS (breadth == level).
-    Remember DFS is depth-first traversal!
+    """
+    Approach: Use iterative BFS, since it is 'level' order (BFS -> breadth == level)
+    Remember DFS is for Depth-First traversal/search!
     
-    Time complexity = O(n) since we do a BFS on the tree
-    Space complexity = O(n), since the queue stores upto n/2 nodes in it. 
-    This makes O( n/2 ) -> O( n ) space complexity
-    '''
+    Time complexity: O(N) since we do a BFS on the tree.
+    Space complexity: O(N), since the queue stores upto N/2 nodes in it. 
+    This makes O(N/2) -> O(N) space complexity
+    """
     
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
         # Empty case, return empty result
@@ -37,7 +44,13 @@ class Solution:
             # Iterate through the nodes in current level
             for i in range(len(queue)):
                 
-                # Remember the steps for BFS - pop current element, add its children to the queue
+                """
+                Remember the steps for Iterative BFS (done using a Queue)  -> 
+                - Pop the root from queue (leftmost element since FIFO)
+                - Add the left and right children to the queue
+                - Increment the level by 1 (since we are going level by level i.e. breadth-wise)
+                - Continue until queue is empty (which the for loop handles)
+                """
                 
                 # Pop the root node from the left of the queue i.e. from start of the queue
                 node = queue.popleft()
@@ -51,7 +64,7 @@ class Solution:
                 if node.right:
                     queue.append(node.right)
             
-            # Finally append ALl the nodes in the `level` array to the result
+            # Finally append ALL the nodes in the `level` array to the result
             # Added as a list, to the `result` list
             result.append(level)
         
