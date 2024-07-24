@@ -1,21 +1,28 @@
-'''
+"""
 Question: https://leetcode.com/problems/maximum-depth-of-binary-tree/
-'''
+"""
 
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+
+from typing import Optional
+
+
+class TreeNode:
+    """
+    Definition for a binary tree node
+    """
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
 
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
-        '''
+        """
         Approach 1: Recursive DFS
         From a root node, find the max between the left and the right subtrees. 
-        The max depth is then 1 + the maximum between left and right.
-        '''
+        The final max depth is `1 + the maximum between left subtree max depth and right subtree max depth`
+        """
         
         # Base case
         if not root:
@@ -25,11 +32,15 @@ class Solution:
         # 1 is added here for the current level's depth!
         return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
     
-        '''
+        """
         Approach 2: Iterative BFS 
         Count the number of levels which will be maximum depth of the tree. 
-        Done by BFS using a Queue - In every iteration, pop the root, add the left and right children.
-        '''
+        BFS done using a Queue, where for every iteration ->
+        - Pop the root from queue (leftmost element since FIFO)
+        - Add the left and right children to the queue
+        - Increment the level by 1 (since we are going level by level i.e. breadth-wise)
+        - Continue until queue is empty
+        """
         
 #         # Init level and add the root to the deque
 #         level = 0
