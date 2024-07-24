@@ -1,13 +1,19 @@
-'''
+"""
 Question: https://leetcode.com/problems/container-with-most-water/
-'''
+"""
+
+from typing import List
+
 
 class Solution:
     def maxArea(self, height: List[int]) -> int:
-        '''
-        Use Two Pointers -> `left` and `right`
-        Time Complexity: O(n)        
-        '''
+        """
+        Use Two Pointers -> `left` and `right`, compare the volume of water held by each container and only
+        move the pointer with the smaller height to get the most water in the next container.
+        Also, keep track of the max volume of water held by any container.
+
+        Time Complexity: O(N)        
+        """
         
         # Init the two pointers on opposite ends of the list `height`
         left, right = 0, len(height)-1
@@ -38,3 +44,4 @@ class Solution:
                 right -= 1
                         
         return most_water
+    
