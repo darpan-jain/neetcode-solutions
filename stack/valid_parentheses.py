@@ -1,6 +1,7 @@
-'''
+"""
 Question: https://leetcode.com/problems/valid-parentheses/
-'''
+"""
+
 
 class Solution:
     def isValid(self, s: str) -> bool:
@@ -14,9 +15,10 @@ class Solution:
         # Iterate through the input string
         for b in s:
             """
-            If stack isn't empty AND we have a valid bracket AND if last brack 
-            from stack is equal to closing brack's key from dict i.e. opening, 
-            then remove that pair of brackets from the stack
+            If `stack` isn't empty AND we have a valid bracket 
+            AND if last brack from stack is equal to closing brack's key
+            from dict i.e. opening, 
+            then remove that pair of brackets from the stack.
             """
 
             # We check if it's a valid bracket and if the stack is non-empty
@@ -35,17 +37,17 @@ class Solution:
             else:
                 stack.append(b)
         
-        ''' Returns True if stack is empty (checked using 'not stack') and vice-versa'''
+        """ Returns True if stack is empty (checked using 'not stack') and vice-versa """
         return True if not stack else False
 
-        ''' Alternative code for same approach '''
+        """ Alternative code for same approach """
 
         # closeToOpen = {")": "(", "]": "[", "}": "{"}
         # stack = []
 
         # for c in s:
             
-        #     # If c not in closeToOpen dict, that means it's an opening bracket
+        #     # If c not in `closeToOpen` dict, that means it's an opening bracket
         #     if c not in closeToOpen:
         #         # Add to stack and skip to next iteration
         #         stack.append(c)
@@ -64,5 +66,3 @@ class Solution:
 
         # # `not stack` means stack is empty i.e. valid else False if stack is not empty
         # return True if not stack else False
-
-

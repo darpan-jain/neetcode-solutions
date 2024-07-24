@@ -1,11 +1,11 @@
-'''
+"""
 Question: https://leetcode.com/problems/minimum-window-substring/
-'''
+"""
 
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
-        '''
-        Sliding window with two pointers - 
+        """
+        Approach: Sliding window with two pointers - 
         
         1. Count the frequency of characters in `t`
         2. Maintain two counters - `have` & `need`
@@ -18,8 +18,8 @@ class Solution:
 
         So, we move `right` pointer in `have != need` (the for loop at line 43) and `left` pointer if `have == need` (line 56)
         
-        Time complexity: O(n)
-        '''
+        Time complexity: O(N)
+        """
         
         # Edge case
         if not t: 
