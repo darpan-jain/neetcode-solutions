@@ -1,16 +1,16 @@
-'''
+"""
 Question: https://leetcode.com/problems/longest-substring-without-repeating-characters/
-'''
+"""
+
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         
-        ''' 
-        Approach 1: Sliding window with two pointers
-        Maintain a character set representing all the characters inside the window
-        If character repeats in a window, move the left pointer until the window
-        is valid again i.e., no repeating characters in the window
-        '''
+        """ 
+        Approach 1: Sliding window with two pointers. Maintain a character set representing all the
+        characters inside the window. If character repeats in a window, move the left pointer until
+        the window is valid again i.e., no repeating characters in the window.
+        """
         
         # Charset to maintain the non-repeating sequence in the sliding window
         charSet = set()
@@ -35,12 +35,13 @@ class Solution:
             charSet.add(s[r])
             
             # Update the max length of the subseq so far
-            max_len = max( max_len, r-l+1 )
+            curr_len = r-l+1
+            max_len = max(max_len, curr_len)
                 
         return max_len
         
         
-        ''' Approach 2: Also sliding window approach: O(n) time complexity '''
+        """ Approach 2: Also sliding window approach: O(n) time complexity """
         
 #         # Init two pointers - 'start' stays constant (represents start of the current substring), 
 #         # and 'j' moves to the right checking to compare the characters and trying to
@@ -71,7 +72,7 @@ class Solution:
 #         return max_len        
         
         
-        '''Approach 3: Same approach 2, more concise implementation '''
+        """ Approach 3: Same approach 2, more concise implementation """
         
 #         # Dict to store the index of each character while iterating the input string
 #         chars = {}
