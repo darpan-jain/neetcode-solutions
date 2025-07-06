@@ -80,6 +80,16 @@ A full list of the topics and questions covered in this repo (so far). **Solutio
 | [Add and Search Word - Data Structure Design](https://leetcode.com/problems/design-add-and-search-words-data-structure/description/) | [add_search_word.py](tries/add_search_word.py) |
 | [Word Search II](https://leetcode.com/problems/word-search-ii/) | [word_search_ii.py](tries/word_search_ii.py)   |
 
+## [Graphs](graphs)
+| | |
+| --- | ----------- |
+| [Number of Islands](https://leetcode.com/number-of-islands) | [number_of_islands.py](graphs/number_of_islands.py) |
+| [Clone Graph](https://leetcode.com/problems/clone-graph/) | [clone_graph.py](graphs/clone_graph.py)  |
+| [Course Schedule](https://leetcode.com/problems/course-schedule/) | [course_schedule.py](graphs/course_schedule.py) |
+| [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [pacific_atlantic_water_flow.py](graphs/pacific_atlantic_water_flow.py) |
+| [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) | [graph_valid_tree.py](graphs/graph_valid_tree.py) |
+| [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [number_of_connected_components.py](graphs/number_of_connected_components.py) |
+
 ## [1-D Dynamic Programming](1d_dynamic_programming)
 | | |
 | --- | ----------- |
