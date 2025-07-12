@@ -1,6 +1,8 @@
 # List of Questions & Solutions
 
-A full list of the topics and questions covered in this repo (so far). **Solutions counter - 46/75**
+A full list of the topics and questions covered in this repo (so far).
+
+**Solutions counter - 70/150**
 
 ---
 
