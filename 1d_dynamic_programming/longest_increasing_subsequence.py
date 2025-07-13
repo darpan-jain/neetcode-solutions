@@ -2,29 +2,52 @@
 Question: https://leetcode.com/problems/longest-increasing-subsequence/
 '''
 
+from typing import List
+
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
         
-        ''' DP Approach -> Time Complexity = O(n^2) '''
+        ''' 
+        Bottom-up DP Approach 
+
+        Iterate `nums` in reverse. At each index `i` 
+            1. Create an increasing subsequence between i and len(nums) 
+            2. Store the len of the subsequence in dp[i], if it is more that the current value (default is 1)
+        
+        Finally, return the max length stored in all values of `dp`
+        
+        Time Complexity:
+            O(N^2) -> since we have an outer loop for `i` and then an inner loop to create increasing subsequence) 
+        
+        Space Complexity: 
+            O(N) -> extra space to store the values in `dp`
+        
+        Can be done in O(N log N) using Segment Trees or Binary Search + DP 
+        Refer to "Solutions" under https://neetcode.io/problems/longest-increasing-subsequence)
+        '''
         
         n = len(nums)
         
-        # Create array of 1 with length = len(nums)
-        # This DP maintains the length of increasing sequences at each index
-        dp = [1 for _ in range(n)]
+        # Create DP of len(nums) with default value of 1 (since each element in itself is a subsequence of length 1)
+        # This DP maintains the length of increasing sequences at each index `i`
+        dp = [1] * n
         
-        # Since this is a DP approach, we iterate in reverse i.e. Bottom-up
-        # `i` iterates over len(nums) to 0 (in reverse) 
+        # We iterate in bottom-up i.e. reverse to populate the `dp`
+
+        # Outer loop iterates over all elements in reverse order
         for i in range(n, -1, -1):
-            # `j` iterates over all elements after the ith index (until `n`)
+
+            # Inner loop iterates over all elements after the ith index until end of `nums`
             for j in range(i+1, n):
-                # Check if 'ith' element is lesser than every jth element
-                # i.e. check if it fits the increasing sub-sequence
+                
+                # Check for increasing subsequence, 
+                # i.e., if nums[i] (previous element) is less than nums[j] (current element)
                 if nums[i] < nums[j]:
-                    # If it does, store the subseq with the longest length
-                    # Note: the 1 is added because we include the current 
-                    # element in the subsequence
+
+                    # If yes, then update the max subsequence length at dp[i]
+                    # Note: 1 is added because we add the current element `nums[j]` to the new subsequence
                     dp[i] = max(dp[i], 1 + dp[j])
         
-        # Return the length of the longest sequence
+        # After processing all elements, `dp` will contain the length of the longest increasing subsequence at all indices
+        # Return the max value from all the indices in `dp`
         return max(dp)
