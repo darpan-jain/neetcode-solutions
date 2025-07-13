@@ -7,7 +7,7 @@ from typing import List
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
         
-        ''' 
+        """ 
         Bottom-up DP Approach 
 
         Iterate `nums` in reverse. At each index `i` 
@@ -24,7 +24,7 @@ class Solution:
         
         Can be done in O(N log N) using Segment Trees or Binary Search + DP 
         Refer to "Solutions" under https://neetcode.io/problems/longest-increasing-subsequence)
-        '''
+        """
         
         n = len(nums)
         
