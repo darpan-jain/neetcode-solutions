@@ -7,7 +7,7 @@ Link: https://leetcode.com/problems/unique-paths/
 
 class Solution:
     def uniquePaths(self, ROWS: int, COLS: int) -> int:
-        '''
+        """
         Apprach: Traverse bottom-up (DP) towards the starting position, 
                  collecting all possible unique paths at every grid position.
         
@@ -23,7 +23,7 @@ class Solution:
         
         Time-Complexity: O(M * N), since we traverse M rows and N cols (visiting each node once in the grid)
         Space Complexity: O(N) saving the DP for each row
-        '''
+        """
 
         # The board is a grid of size `m`` rows x `n` cols
         
