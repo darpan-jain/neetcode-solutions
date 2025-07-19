@@ -4,6 +4,7 @@ Question: https://leetcode.com/problems/rotate-image/
 
 
 from typing import List
+import numpy as np
 
 class Solution:
     def rotate(self, matrix: List[List[int]]) -> None:
@@ -71,3 +72,14 @@ class Solution:
             l += 1
 
     # No return statement, since the question asks to modify the matrix in-place
+
+
+        """
+        Numpy Approaches
+        """
+
+        # Single line using in-built numpy function
+        matrix[:] = np.rot90(matrix, k=1)
+
+        # Since a matrix transpose is equivalent to a 90 degree rotation, we can:
+        matrix[:] = np.transpose(matrix)
