@@ -2,7 +2,7 @@
 
 A full list of the topics and questions covered in this repo (so far).
 
-**Solutions counter - 71/150**
+**Solutions counter - 74/150**
 
 ---
 
@@ -138,6 +138,9 @@ A full list of the topics and questions covered in this repo (so far).
 | --- | ----------- |
 | [Insert Interval](https://leetcode.com/problems/insert-interval/) | [insert_interval.py](intervals/insert_interval.py) |
 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [merge_intervals.py](intervals/merge_intervals.py) |
+| [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | [non_overlapping_intervals.py](intervals/non_overlapping_intervals.py) |
+| [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | [meeting_rooms.py](intervals/meeting_rooms.py) |
+| [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) | [meeting_rooms_ii.py](intervals/meeting_rooms_ii.py) |
 
 ## [Math & Geometry](math_and_geometry)
 
@@ -146,7 +149,6 @@ A full list of the topics and questions covered in this repo (so far).
 | [Rotate Image](https://leetcode.com/problems/rotate-image/)           | [rotate_image.py](math_and_geometry/rotate_image.py) |
 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)         | [spiral_matrix.py](math_and_geometry/spiral_matrix.py) |
 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | [set_matrix_zeroes.py](math_and_geometry/set_matrix_zeroes.py) |
-
 
 ## [Bit Manipulation](bit_manipulation)
 
