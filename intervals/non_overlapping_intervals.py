@@ -8,7 +8,7 @@ from typing import List
 
 class Solution:
     def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:
-        '''
+        """
         Greedy Approach 1: Sort intervals by starts
 
         How to check if two intervals overlaps?
@@ -22,7 +22,7 @@ class Solution:
         
         Time Complexity: O(N log N) -> `log N` for sorting, and `N` to iterate list of N `intervals`
         Space Complexity: O(1) -> One single variable `deleted` to store the result
-        '''
+        """
         
         # Sort the input `intervals` based on start values
         # Done so that we only compare the adjacent intervals.
