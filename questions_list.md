@@ -102,6 +102,12 @@ A full list of the topics and questions covered in this repo (so far).
 | [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)                                                                           | [graph_valid_tree.py](graphs/graph_valid_tree.py) |
 | [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [number_of_connected_components.py](graphs/number_of_connected_components.py) |
 
+## [Advanced Graphs](advanced_graphs)
+
+|     |             |
+| --- | ----------- |
+| [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) | [alien_dictionary.py](advanced_graphs/alien_dictionary.py) |
+
 ## [1-D Dynamic Programming](1d_dynamic_programming)
 
 |     |             |
