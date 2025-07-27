@@ -2,7 +2,7 @@
 
 A full list of the topics and questions covered in this repo (so far).
 
-**Solutions counter - 74/150**
+**Solutions counter - 75/150**
 
 ---
 
@@ -160,7 +160,8 @@ A full list of the topics and questions covered in this repo (so far).
 
 |     |             |
 | --- | ----------- |
-| [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | [number_of_1_bits.py](bit_manipulation/number_of_1_bits.py) |
-| [Counting Bits](https://leetcode.com/problems/counting-bits/)       | [counting_bits.py](bit_manipulation/counting_bits.py) |
-| [Reverse Bits](https://leetcode.com/problems/reverse-bits/)         | [reverse_bits.py](bit_manipulation/reverse_bits.py) |
-| [Missing Number](https://leetcode.com/problems/missing-number/)     | [missing_number.py](bit_manipulation/missing_number.py) |
+| [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)       | [number_of_1_bits.py](bit_manipulation/number_of_1_bits.py) |
+| [Counting Bits](https://leetcode.com/problems/counting-bits/)             | [counting_bits.py](bit_manipulation/counting_bits.py) |
+| [Reverse Bits](https://leetcode.com/problems/reverse-bits/)               | [reverse_bits.py](bit_manipulation/reverse_bits.py) |
+| [Missing Number](https://leetcode.com/problems/missing-number/)           | [missing_number.py](bit_manipulation/missing_number.py) |
+| [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | [sum_of_two_integers.py](bit_manipulation/sum_of_two_integers.py) |
