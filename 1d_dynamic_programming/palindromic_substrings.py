@@ -14,15 +14,16 @@ class Solution:
         # Count odd length palidromes
         for i in range(n):
             # For odd length palindromes -> l == r == i
-            numPalis += self.countPalindromes(i, i, s)
+            numPalis += self.count_palindromes_by_expansion(i, i, s)
             # For even length palindromes -> l = i and  r = i+1
-            numPalis += self.countPalindromes(i, i+1, s)
+            numPalis += self.count_palindromes_by_expansion(i, i+1, s)
             
         return numPalis
     
     # Helper function to find palindromes between two pointers `l` and `r`, given a string `s`
-    def countPalindromes(self, l, r, s):
+    def count_palindromes_by_expansion(self, l, r, s):
         count = 0
+        
         # Start at the same midpoint and expand outwards (in opposite directions)
         while l >= 0 and r < len(s) and s[l] == s[r]:
             count += 1
