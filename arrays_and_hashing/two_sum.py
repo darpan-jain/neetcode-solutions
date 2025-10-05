@@ -6,18 +6,20 @@ from typing import List
 
 
 class Solution:
-
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         
-        # Dictionary to store elements/numbers in `nums` as keys and their indices as value
+        # Dict to store each element `n` in `nums` as key and its index as value
         d = {}
         
-        for idx, num in enumerate(nums):
-            # If `target - curr num` is already parsed (and in the dictionary), you have a Two Sum pair!
-            if target-num in d:
-                return [d[target-num], idx]
+        # Now iterate through `nums`
+        for idx, curr_num in enumerate(nums):
+            
+            # If `target - curr num` is already parsed (and in the dict), 
+            # you have a Two Sum pair!
+            if target-curr_num in d:
+                return d[target-curr_num], idx
                 
-            # Else, you keep saving the number (as key) and its index (as value)
-            d[num] = idx
+            # Else, you keep saving the current number `n` and its index in the dict
+            d[curr_num] = idx
 
         # No final return statement needed since a solution is guaranteed (as per the problem statement).
