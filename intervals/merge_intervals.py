@@ -49,14 +49,15 @@ class Solution:
         
         for curr_start, curr_end in intervals:
             
-            # Extract the end of the last interval in the result `merged`
-            lastEnd = merged[-1][1]
+            # Extract the start and end of the last interval in the result `merged`
+            lastStart, lastEnd = merged[-1][0], merged[-1][1]
 
             # After sorting we only check current start being <= than last interval's end
             if curr_start <= lastEnd:
                 # If overlapping, we merge the intervals by updating the last interval of the sorted `merged` list
                 # new end = max of the two ends
                 merged[-1][1] = max(lastEnd, curr_end)
+                # The start of the last interval in `merged` doesn't need to change since the input was already sorted
                 
             # If no overlap, then we just add the current interval to the end of the result `merged`
             else:
