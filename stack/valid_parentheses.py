@@ -7,37 +7,38 @@ class Solution:
     def isValid(self, s: str) -> bool:
         ## Implemented using stacks
         
-        # Create a dict of `closing` brackets as `keys` and 'opening' as `values`
+        # Create a dict of 'closing' brackets as 'keys' and 'opening' as 'values'
         closeToOpen = {')':'(', '}':'{', ']':'['}
         # List as an empty stack
         stack = []
         
         # Iterate through the input string
         for b in s:
-            """
-            If `stack` isn't empty AND we have a valid bracket 
-            AND if last brack from stack is equal to closing brack's key
-            from dict i.e. opening, 
-            then remove that pair of brackets from the stack.
-            """
+            '''
+            Main IF condition: If stack isn't empty AND we have a valid bracket AND if last brack 
+            from stack is equal to closing brack's key from dict, i.e. opening, 
+            then remove that pair of brackets from the stack
+            '''
 
-            # We check if it's a valid bracket and if the stack is non-empty
+            # Case for when `b` is a closing bracket - here we have check for validity
+            # We check if it's a valid bracket and if the stack is non-empty (the corresponding opening bracket has occurred)
             if b in closeToOpen and stack:
                 
-                # Finally we check if the current closing parantheses matches the opening in the stack
+                # Finally we check if the current closing bracket matches the opening in the stack
                 if stack[-1] == closeToOpen[b]:
-                    # If it is, then pop and move to the next bracket
+                    # Then it's valid, so we pop and move to the next bracket
                     stack.pop()
 
                 # If not, then invalid case, so we return False
                 else:
                     return False
             
-            # Here, we have another opening bracket or the stack is empty
+            # Case for when `b` is an opening bracket (since failed the if statement that check if it's a closing bracket (i.e., part of the keys in `closeToOpen`)
+            # So we have another opening bracket or the stack is empty, so we just add `b` to the stack
             else:
                 stack.append(b)
         
-        """ Returns True if stack is empty (checked using 'not stack') and vice-versa """
+        ''' Returns True if stack is empty (checked using 'not stack') and vice-versa'''
         return True if not stack else False
 
         """ Alternative code for same approach """
