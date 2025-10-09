@@ -2,22 +2,24 @@
 Question: https://leetcode.com/problems/3sum/
 '''
 
+from typing import List
+
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
-        '''
-        Brute force Approach: Make combinations of 3 elements and check if the sum is zero for each -> doesn't handle duplicates
+        """
+        Brute-force Approach: Make combinations of 3 elements and check if the sum is zero for each -> doesn't handle duplicates
 
-        Optimal method: Sort the array, iterate and for current element, then implement 
-        same solution as Sorted Two Sum!
+        Optimal Approach: Sort the array, iterate and for current element, then implement same solution as Sorted Two Sum!
         
-        Time Complexity  : O(n log n) for sorting + O (n ^ 2) for the 3 Sum algorithm = O(n^2)
-        Space Complexity : O(n), since we store the result in a new array
-        '''
+        Time Complexity  : O(N log N) for sorting + O (N ^ 2) for the 3 Sum algorithm = O(N^2)
+        Space Complexity : O(N), since we store the result in a new array
+        """
         
         result = []
         n = len(nums)
 
         # Sorting taking 'n log n' time. Allows us to skip duplicates! (check line 30)
+        # `sort()` does in-place sorting, so no extra space used vs. `sorted()` which creates a new sorted array
         nums.sort()
         
         for i, curr_num in enumerate(nums):
@@ -40,14 +42,14 @@ class Solution:
             
             # Search until left and right don't overlap
             while l < r:
-                threeSum = curr_num + nums[l] + nums[r]
+                three_sum = curr_num + nums[l] + nums[r]
                 
                 # Sum is too big, move right closer
-                if threeSum > 0:
+                if three_sum > 0:
                     r -= 1
                 
                 # Sum is too small, move left closer
-                elif threeSum < 0:
+                elif three_sum < 0:
                     l += 1
                 
                 # Match found, store the 3 numbers
