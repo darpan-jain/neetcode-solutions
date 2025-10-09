@@ -17,6 +17,7 @@ def isValidSudoku(self, board: List[List[str]]) -> bool:
     # Hashset to record all values in each row, col and 3x3 sub-square
     rows = collections.defaultdict(set)
     cols = collections.defaultdict(set)
+
     # For squares, the key will be the location of the sub-square on the 9x9 board
     # represented by (r//3, c//3) -> using the board's (r, c) and int division by 3,
     # we can find the location of the 3x3 sub-square
@@ -37,6 +38,7 @@ def isValidSudoku(self, board: List[List[str]]) -> bool:
             # If current element not a duplicate, add it to the hashsets
             rows[r].add(board[r][c])
             cols[c].add(board[r][c])
+            # Use (r//3, c//3) to find the location of current sub-square
             squares[(r//3, c//3)].add(board[r][c])
 
     # If not duplicates found in the entire board, it's a Valid Sudoku board!
