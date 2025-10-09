@@ -19,18 +19,19 @@ class Solution:
         # This condition not needed since we are guaranteed a solution!
         while left < right:
             # Compute the sum using the current positions of `left` and `right`
-            currSum = numbers[left] + numbers[right]
+            curr_sum = numbers[left] + numbers[right]
 
             # If the currSum is more than target, we move the `right` pointer to make smaller
-            if currSum > target:
+            if curr_sum > target:
                 right -= 1
+
             # Vice-versa of the first condition, we move the `left` pointer to make `currSum` bigger
-            elif currSum < target:
+            elif curr_sum < target:
                 left += 1
             
             # If neither of the above is true, we have found the solution
             else:
-                # Remember that answer require 1-indexed solution
+                # Remember that answer requires 1-indexed solution
                 return [left+1, right+1]
         
         return []
