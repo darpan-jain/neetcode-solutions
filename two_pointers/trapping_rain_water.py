@@ -7,22 +7,22 @@ from typing import List
 
 class Solution:
     def trap(self, height: List[int]) -> int:
-
         """
         Approach: Use two pointers to traverse the height array from both ends.
+            
+            1. Init two pointers on the two ends of the list and move the pointers towards each other, based on the comparison of `leftMax` and `rightMax`
+                - If `leftMax < rightMax`, it means the left side is shorter, so we can safely calculate the water trapped 
+                    at the left pointer and move it to the right (l += 1)
+                - If `rightMax < leftMax`, we calculate the water trapped at the right pointer and move it to the left (r -= 1)
 
-        - Move the pointers towards each other based on the comparison of `leftMax` and `rightMax`
-            - If `leftMax < rightMax`, it means the left side is shorter, so we can safely calculate the water trapped at the left pointer and move it to the right (l += 1)
-            - If `rightMax < leftMax`, we calculate the water trapped at the right pointer and move it to the left (r -= 1)
-
-        - The water trapped at each position is determined by the formula: `min(leftMax, rightMax) - height[i]`
-            - `min(leftMax, rightMax)` since the water level at any position can only be as high as the shorter of the two sides
-            - `height[i]` is subtracted because we cannot trap water above the height of the current bar
-        - Keep calculating the rain water at each element's position using - `min(leftMax, rightMax) - height[i]`
+            2. The water trapped at each position is determined by the formula: `min(leftMax, rightMax) - height[i]`
+                - `min(leftMax, rightMax)` since the water level at any position is limited by the height of the shorter side
+                - `height[i]` is subtracted because we cannot trap water above the height of the current bar
+            
+            3. Keep calculating the rain water at each element's position using - `min(leftMax, rightMax) - height[i]`
         
         Time Complexity: O(N)
         Space Complexity: O(1)
-
         """
         
         # Empty or invalid input case
@@ -61,5 +61,3 @@ class Solution:
         
         # Finally, return the total amount of water trapped
         return total_water
-        
-    
