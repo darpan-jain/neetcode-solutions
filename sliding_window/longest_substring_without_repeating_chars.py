@@ -24,6 +24,8 @@ class Solution:
         for r in range(len(s)):
             
             # If we encounter a duplicate character, increment the left pointer
+            # `while` loop, since we keep shrinking the window until it becomes valid again
+            # (i.e., no duplicate characters in the window)
             while s[r] in charSet:
                 # Remove the char at left pointer and increment the left pointer by 1
                 charSet.remove(s[l])
