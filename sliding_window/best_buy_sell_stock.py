@@ -12,7 +12,7 @@ class Solution:
         # Iterate over the prices but skip first element since that is assigned to current buy price
         for curr_price in prices[1:]:
             
-        # If you find a lower price than current buy price, that's your new buy price
+            # If you find a lower price than current buy price, that's your new buy price
             if curr_price < buy: 
                 buy = curr_price
                 
