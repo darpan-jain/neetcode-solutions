@@ -5,39 +5,45 @@ Question: https://leetcode.com/problems/longest-repeating-character-replacement/
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
         """
-        Sliding window approach with two pointers. 
-        The pointers start from element 0 and right pointer is moved right everytime until
-        we meet the condition -> number of replacements required in current window <= k
+        Approach: 
+            Use Sliding window approach with two pointers. 
+            
+            Both pointers start from element 0 and the right pointer is moved further right,
+            untilwe meet the condition where -> number of replacements required in current window <= `k`
         
-        Here, the number of required to replace should be less than the max allowed replacements (i.e. k)
-        calculated using -> (window_size - count of most occuring character in the window)
+            Here, the number of replacements required should be less than the max allowed replacements (i.e. `k`),
+            which is calculated using "current window size - count of most occuring character in the window"
+                -> `(r - l + 1) - max(count.values())`
+
+            # Why is `max(count.values())` used?
+                -> Since we can replace any ONE character `k` times, so we consider the 
+                   most occuring character in the window for the replacements
         
         Time complexity: O(N)
+        Space complexity: O(1) - since the count dict will have at most 26 characters
         """
         
         # Dict `count` to store the frequency of the characters in the current window
         count = {}
         
+        # Result variable to store the max length of valid window found
         max_len = 0
         
-        # Left pointer that stays
+        # Left pointer starting at index 0
         l = 0
 
-        # Right pointer moves to the right, expanding the sliding window
+        # Right pointer, also starting at zero but moves to the right, expanding the sliding window
         for r, curr_char in enumerate(s):
             
-            # Increment the frequency of the current character by 1
+            # Increment the frequency of the current character by 1 in the `count` dict
             count[curr_char] = 1 + count.get(curr_char, 0)
             
-            # Check if the `(windowLen - max occuring char in the window)` is <= k
-            # i.e. check if this is a valid window maximizing the sequence length
-            # Using this we check if the required replacements are
-            # less than the allowed 'k' replacements
+            # Make the window valid if it's not, by moving the left pointer (after considering the possible replacements)
+            # `k` possible replacements are also considered using `(windowLen - max occuring char in the window)` is <= k
             while (r - l + 1) - max(count.values()) > k:
 
-                # If not, then move the left pointer to the right (and decrement the
-                # count of the char that was taken out of the window by moving 
-                # the left pointer) and make the window valid again
+                # If not valid window, we remove the character at the left pointer,
+                # remove it from the `count` dict and increment the left pointer position
                 count[s[l]] -= 1
                 l += 1
 
