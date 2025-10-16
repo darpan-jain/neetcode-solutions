@@ -45,7 +45,9 @@ A full list of the topics and questions covered in this repo (so far).
 
 |     |             |
 | --- | ----------- |
-| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)         | [valid_parentheses.py](stack/valid_parentheses.py) |
+| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                               | [valid_parentheses.py](stack/valid_parentheses.py) |
+| [Min Stack](https://leetcode.com/problems/min-stack/)                                               | [min_stack.py](stack/min_stack.py)                 |
+| [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [reverse_polish_notation.py](stack/reverse_polish_notation.py) |
 
 ## [Binary Search](binary_search)
 
