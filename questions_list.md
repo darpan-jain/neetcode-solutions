@@ -161,6 +161,7 @@ A full list of the topics and questions covered in this repo (so far).
 | [Happy Number](https://leetcode.com/problems/happy-number/)           | [happy_number.py](math_and_geometry/happy_number.py) |
 | [Plus One](https://leetcode.com/problems/plus-one/)                   | [plus_one.py](math_and_geometry/plus_one.py) |
 | [Pow(x, n)](https://leetcode.com/problems/powx-n/)                    | [pow.py](math_and_geometry/pow.py) |
+| [Detect Squares](https://leetcode.com/problems/detect-squares/)       | [detect_squares.py](math_and_geometry/detect_squares.py) |
 
 ## [Bit Manipulation](bit_manipulation)
 
