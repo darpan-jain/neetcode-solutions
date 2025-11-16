@@ -158,6 +158,7 @@ A full list of the topics and questions covered in this repo (so far).
 | [Rotate Image](https://leetcode.com/problems/rotate-image/)           | [rotate_image.py](math_and_geometry/rotate_image.py) |
 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)         | [spiral_matrix.py](math_and_geometry/spiral_matrix.py) |
 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | [set_matrix_zeroes.py](math_and_geometry/set_matrix_zeroes.py) |
+| [Happy Number](https://leetcode.com/problems/happy-number/)           | [happy_number.py](math_and_geometry/happy_number.py) |
 
 ## [Bit Manipulation](bit_manipulation)
 
