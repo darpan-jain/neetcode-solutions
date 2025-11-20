@@ -24,9 +24,8 @@ class Solution:
             - i2_end >= i1_start
         
         When two such intervals found, new boundaries are
-            `new start` = min of starts
-            `new end` = the max of ends
-        -> [min(i1[0], i2[0]), max(i1[1], i2[1])]
+            (min of starts, max of ends)
+            -> [min(i1_start, i2_start), max(i1_end, i2_end)]
         
         Why sort the input `intervals`?
             Sorting ensures that we just compare adjacent pairs of intervals,
@@ -54,7 +53,7 @@ class Solution:
 
             # After sorting we only check current start being <= than last interval's end
             if curr_start <= lastEnd:
-                # If overlapping, we merge the intervals by updating the last interval of the sorted `merged` list
+                # Overlapping, so we merge the intervals by updating the last interval of the sorted `merged` list
                 # new end = max of the two ends
                 merged[-1][1] = max(lastEnd, curr_end)
                 # The start of the last interval in `merged` doesn't need to change since the input was already sorted
