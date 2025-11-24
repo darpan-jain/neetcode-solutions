@@ -116,6 +116,7 @@ A full list of the topics and questions covered in this repo (so far).
 |     |             |
 | --- | ----------- |
 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                               | [climbing_stairs.py](1d_dynamic_programming/climbing_stairs.py) |
+| [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)             | [min_cost_climbing_stairs.py](1d_dynamic_programming/min_cost_climbing_stairs.py) |
 | [House Robber](https://leetcode.com/problems/house-robber/)                                     | [house_robber.py](1d_dynamic_programming/house_robber.py) |
 | [House Robber II](https://leetcode.com/problems/house-robber-ii/)                               | [house_robber_ii.py](1d_dynamic_programming/house_robber_ii.py) |
 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)   | [longest_palindromic_substring.py](1d_dynamic_programming/longest_palindromic_substring.py) |
