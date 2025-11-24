@@ -1,5 +1,5 @@
 '''
-Question Link: https://leetcode.com/problems/gas-station/
+Question: https://leetcode.com/problems/gas-station/
 '''
 
 from typing import List

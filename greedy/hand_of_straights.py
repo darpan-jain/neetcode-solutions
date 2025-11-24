@@ -1,5 +1,5 @@
 '''
-Question Link: https://leetcode.com/problems/hand-of-straights/
+Question: https://leetcode.com/problems/hand-of-straights/
 '''
 
 from collections import Counter

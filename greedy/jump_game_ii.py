@@ -1,5 +1,5 @@
 '''
-Question Link: https://leetcode.com/problems/jump-game-ii/
+Question: https://leetcode.com/problems/jump-game-ii/
 '''
 
 
