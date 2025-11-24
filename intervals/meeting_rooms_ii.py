@@ -35,7 +35,7 @@ class Solution:
         occupied, maxRooms = 0, 0
 
         # Maintain `s` and `e` counters for tracking
-        # num of meeting started and ended
+        # num of meetings started and ended
         s, e = 0, 0
 
         # Iterate through both the lists of start and end times

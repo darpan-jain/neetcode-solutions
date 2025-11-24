@@ -1,6 +1,5 @@
 '''
-Question: Jump Game II
-Link: https://leetcode.com/problems/jump-game-ii/
+Question Link: https://leetcode.com/problems/jump-game-ii/
 '''
 
 
@@ -36,7 +35,7 @@ class Solution:
                 # Update farthest if current reach is further
                 farthest = max(farthest, i+nums[i])
             
-            # After iteration entire window, update L and R
+            # After iteration through entire window, update L and R
             # L = next index after right bound
             # R = furthest index that can be acheived using elements from last window
             l = r+1

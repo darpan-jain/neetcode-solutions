@@ -13,7 +13,7 @@ class Solution:
 
         How to check if two intervals overlaps?
             - IF curr_start <= prevEnd, 
-            i.e., if the current start interval starts before the previous interval ends
+            i.e., if the current interval STARTS BEFORE the previous interval ends
         
         While deleting overlapping intervals, we retain the min of the two intervals' ends, 
         thus deleting the interval with the larger end value
