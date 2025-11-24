@@ -4,12 +4,17 @@ Question: https//leetcode.com/problems/climbing-stairs/
 
 class Solution:
     def climbStairs(self, n: int) -> int:
+        """
+        Approach: Use bottom-up dynamic programming, i.e., solve subproblems until you reach the end
         
-        ''' Solve using DP Bottom up approach. i.e. solve subproblems until you reach the end.
-        This is basicially a Fibonacci series. Create it for n iterations and then the result is in the first variable. 
-        '''
+        This is basicially a Fibonacci series. 
+        Create the series for `n` iterations and then the result is in the first variable. 
+
+        Time Complexity: O(N)
+        Space Complexity: O(1)
+        """
         
-        # Start with both values as 1.
+        # Start with both values as 1
         a, b = 1, 1
         
         for _ in range(n):
@@ -21,7 +26,9 @@ class Solution:
         # How? 
         return a
     
-        ''' Another way to write the same code '''
+        """ 
+        Another way to write the same code
+        """
 #         one, two = 1, 1
     
 #         for i in range(n - 1):
