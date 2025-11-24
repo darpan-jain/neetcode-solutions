@@ -7,7 +7,7 @@ class Solution:
         """
         Approach: Use bottom-up dynamic programming, i.e., solve subproblems until you reach the end
         
-        This is basicially a Fibonacci series. 
+        This is basicially a Fibonacci series (1, 1, 2, 3, 5, 8, 13, ...), the number of ways to climb `n` stairs is the sum of the ways to climb `n-1` and `n-2` stairs.
         Create the series for `n` iterations and then the result is in the first variable. 
 
         Time Complexity: O(N)
