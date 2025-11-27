@@ -7,7 +7,7 @@ from typing import List
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
         """ 
-        Approach: Bottom Up Dynamic Programming
+        Approach: Top-Down Dynamic Programming (iterate from start to end)
 
         1. Create a DP array of size `amount + 1` (to include 0 to amount) and initialize each value to a max value (i.e. `amount + 1` or infinty)
         2. Set the base case dp[0] = 0, since amount 0 requires 0 coins
