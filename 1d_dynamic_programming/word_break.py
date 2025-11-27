@@ -2,46 +2,53 @@
 Question: https://leetcode.com/problems/word-break/
 '''
 
+from typing import List
+
+
 class Solution:
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
-        '''
-        
-        Use bottom-up dynamic programming to solve 
+        """        
+        Approach: Bottom-up Dynamic Programming (iterate in reverse from end of string to start)
+            - Use a DP array to store boolean values indicating whether the substring starting 
+              at each index can be segmented into words from the dictionary
+            - Iterate from the end of the string to the beginning, checking for each index
+              if any word in the dictionary matches the substring starting at that index
+              and if the remaining substring can be segmented (using previously computed DP values)
+            - If a match is found, update the DP array accordingly
+            - Final result is found at dp[0], indicating if the entire string can be segmented
         
         Time Complexity: O(N * M) 
-            where, 
-            `N` is the length of the string `s`
-            `M` is the number of words in `wordDict`
-
-        Space Complexity: O(N) for storing the DP array
-        '''
+            where, N = length of the string `s`,
+                   M = number of words in `wordDict`
+        Space Complexity: O(N), for storing the DP array
+        """
         
-        # DP stores the possibility of solution at every index in the string. 
+        # DP stores the possibility of solution at every index in the string
         # The extra 1 is added for our base case (remember that `len` is zero-indexed in Python)
         dp = [False] * (len(s) + 1)
 
         '''
         Base case which assumes that if we get to the end of the string, then the string can be segmented.
-        This is needed since we iterate in reverse (bottom-up DP), i.e., from `len(s)-1` to 0, 
+        This is needed since we iterate in reverse (bottom-up DP), i.e., from `len(s) - 1` to 0, 
         so we start with the base case (at len(s)) being True (Remember that `len` is zero-indexed in Python)
         '''
         dp[len(s)] = True
         
         # Iterate bottom-up (i.e. in reverse)
-        for i in range(len(s)-1, -1, -1):
+        for i in range(len(s) - 1, -1, -1):
 
             # Inner loop to iterate over every word in `wordDict` for the current index `i`
             for w in wordDict:
                 
-                # Check if `ith index + word length` is within the string bounds
-                # AND if it matches the current word from the wordDict
-                if (i + len(w)) <= len(s) and s[i: i + len(w)] == w:
+                # Check if `ith index + word length` is within the string bounds AND
+                # If it matches the current word from the `wordDict`
+                if (i + len(w) <= len(s)) and (s[i: i + len(w)] == w):
 
-                    # If it does, then you make the update value of `i` in the DP,
-                    # which would be setting `dp[i]` to the same value as `dp[i+len(w)]` i.e., True
+                    # If it does, then update value of `i` in the DP
+                    # which would be `dp[i]` = `dp[i+len(w)]` i.e., True 
                     dp[i] = dp[i + len(w)]
                     
-                    # If dp[i] already set True for one of the words in `wordDict`, can break and move to the next index in `s`
+                    # If `dp[i]` already set True for one of the words in `wordDict`, can break and move to the next index in `s`
                     if dp[i]:
                         break
         

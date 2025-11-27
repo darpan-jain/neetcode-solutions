@@ -6,24 +6,19 @@ from typing import List
 
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
-        
         """ 
-        Bottom-up DP Approach 
+        Approach: Bottom-up DP (iterate in reverse)
 
-        Iterate `nums` in reverse. At each index `i` 
+        - Iterate `nums` in reverse. At each index `i`:
             1. Create an increasing subsequence between i and len(nums) 
             2. Store the len of the subsequence in dp[i], if it is more that the current value (default is 1)
+        - Finally, return the max length stored in all values of `dp`
         
-        Finally, return the max length stored in all values of `dp`
-        
-        Time Complexity:
-            O(N^2) -> since we have an outer loop for `i` and then an inner loop to create increasing subsequence) 
-        
-        Space Complexity: 
-            O(N) -> extra space to store the values in `dp`
+        Time Complexity: O(N^2), since we have an outer loop for `i` and then an inner loop to create increasing subsequence) 
+        Space Complexity: O(N), extra space to store the values in `dp`
         
         Can be done in O(N log N) using Segment Trees or Binary Search + DP 
-        Refer to "Solutions" under https://neetcode.io/problems/longest-increasing-subsequence)
+        Refer to https://neetcode.io/problems/longest-increasing-subsequence/solution
         """
         
         n = len(nums)
@@ -32,13 +27,12 @@ class Solution:
         # This DP maintains the length of increasing sequences at each index `i`
         dp = [1] * n
         
-        # We iterate in bottom-up i.e. reverse to populate the `dp`
-
+        # Iterate in bottom-up i.e., reverse, to populate the `dp`
         # Outer loop iterates over all elements in reverse order
         for i in range(n, -1, -1):
 
             # Inner loop iterates over all elements after the ith index until end of `nums`
-            for j in range(i+1, n):
+            for j in range(i + 1, n):
                 
                 # Check for increasing subsequence, 
                 # i.e., if nums[i] (previous element) is less than nums[j] (current element)
