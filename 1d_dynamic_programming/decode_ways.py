@@ -4,58 +4,82 @@ Question: https://leetcode.com/problems/decode-ways/
 
 class Solution:
     def numDecodings(self, s: str) -> int:
-        '''Approach 1: Brute force - more space complexity'''
-#         # Split into subproblems
-#         dp = {len(s) : 1}
-        
-#         def dfs(i):
-#             # Base case 1 - already in dp
-#             if i in dp:
-#                 return dp[i]
-            
-#             # Base case 2 - invalid string
-#             if s[i] == "0":
-#                 return 0
-            
-#             # Check for next digit only
-#             res = dfs(i+1)
-            
-#             # We also have to check if we can take the next two digits
-#             # Conditions - i+1 exists, and the two digits problem is between 10 to 26 
-#             if (i+1 < len(s)) and (s[i] == "1" or 
-#                 s[i] == "2" and s[i+1] in "0123456" ):
-#                 # If yes, then check for the two digits problem
-#                 res += dfs(i+2)
-            
-#             # Remember to store the result in the dp
-#             dp[i] = res
-#             return res
-        
-#         # Run the dfs starting from index 0
-#         return dfs(0)
+        """
+        Approach 1: Use Bottom-up Dynamic Programming
 
-        '''Approach 2: Use Dynamic Programming'''
-        # Split into subproblems, save in a DP of size = len(s), init all values to 1
+            - Maintain a DP dictionary, where the key is the index of the string, and the value is the number of ways to decode the string starting from that index
+            - Iterate through the string in reverse, and save the results of subproblems in a DP dictionary
+            - For each index, check for the one digit case and the two digit case, and save the results in the DP dictionary for the current index `i`
+            - Finally, return the result stored in the DP dictionary at index 0, which will give us the total number of ways to decode the entire string
+
+        Time Complexity: O(N) - we iterate through the string once
+        Space Complexity: O(N) - store the DP dictionary
+        """
+
+        # DP dictionary to store the results of subproblems, 
+        # key = an index of the string and value = number of ways to decode the string starting from that index
         dp = {len(s) : 1}
         
-        # Here we iterate in reverse (solve subproblems) and store the results in dp, building up to index 0
-        for i in range(len(s)-1, -1, -1):
+        # Iterate in reverse (bottom-up) and update the dp[i] with the number of ways to decode the string starting from index i
+        for i in range(len(s) - 1, -1, -1):
             
-            # Base cases where the answer is "0" i.e. invalid character
+            # Base case: s[i] is "0", so no ways to decode the string from that index
             if s[i] == "0":
                 dp[i] = 0
                 
-            # Here, check for one digit case (only one char)
-            # Save the value stored dp (from a previous subproblem - memoization)
-            else:                
+            # Update for one-digit case - here the value of dp[i] will be the same as dp[i+1], since we are referencing the value stored from the previous subproblem (i+1)
+            else:
                 dp[i] = dp[i+1]
                 
-            # Also, check for the two digit problem
-            # Conditions - i+1 should exist, and if two digits problem is between 10 to 26 (since we have only 26 alphabets)
-            # so anything 27 onwards is not an alphabet (will be an invalid character/two chararcter string)
-            if (i+1 < len(s)) and (s[i] == "1" or 
-                s[i] == "2" and s[i+1] in "0123456"):
-                dp[i] += dp[i+2]
+            # Also need to check for the two-digit case (since we can take two digits together to decode a character)
+            # Conditions -> i+1 should exist, 
+            #               the two digits should be between 10 to 26 (since we have only 26 alphabets)
+            #               (so anything 27 onwards is not an alphabet and thus will be an invalid character/two chararcter string)
+            if ( i + 1 < len(s)) and \
+                (s[i] == "1" or s[i] == "2" and \
+                 s[i+1] in "0123456"):
+                # Here, we can form a number between 10 to 26 using the character at i + 2 (two-digit case), we also add the value of dp[i + 2] to dp[i]
+                dp[i] += dp[i + 2]
         
-        # Return the result stored in dp at index 0 (since we iterate in reverse, result will be saved in dp[0] in the end)
+        # Finally, after reverse (bottom-up) iteration and updated to DP, the result will be stored at dp[0]
         return dp[0]
+    
+        """
+
+        Approach 2: Space Optimized Bottom-up Dynamic Programming
+
+            - Instead of using a DP dictionary, we can just use two variables to keep track of the last two results (for one-digit and two-digit cases)
+            - Rest of the approach is the same
+            - This way, we can achieve O(1) space complexity
+
+        Time Complexity: O(N) - we iterate through the string once
+        Space Complexity: O(1) - we only use two variables to store the results of
+        """
+
+        # Initialize two variables to store the results of the last two subproblems
+        dp = dp2 = 0
+
+        # Also init dp1, which will hold the final result
+        dp1 = 1
+
+        # Iterate in reverse (bottom-up) and update `dp` at every step
+        for i in range(len(s) - 1, -1, -1):
+
+            # Base case where current character is "0"
+            if s[i] == "0":
+                dp = 0
+            
+            # One digit case, so we update `dp` which will get the value from last subproblem `dp1`
+            else:
+                dp = dp1
+            
+            if ((i + 1 < len(s)) and \
+                (s[i] == "1" or s[i] == "2") and \
+                 s[i] in "0123456"):
+                dp += dp2
+
+            # Update all dp values by assigning dp1 -> dp, dp2 -> dp1. Also, `dp` is set to 0 for next iteration
+            dp, dp1, dp2 = 0, dp, dp1
+
+        # Final result is stored in `dp1` which represents the first value of the DP dictionary (the number of ways to decode the entire string) from Approach 1
+        return dp1
