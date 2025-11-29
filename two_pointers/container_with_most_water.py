@@ -8,18 +8,21 @@ from typing import List
 class Solution:
     def maxArea(self, height: List[int]) -> int:
         """
-        Use Two Pointers -> `left` and `right`, compare the volume of water held by each container and only
-        move the pointer with the smaller height to get the most water in the next container.
-        Also, keep track of the max volume of water held by any container.
+        Approach: Use Two Pointers -> `left` and `right`
+        
+            - Compare the volume of water held by each container and only move the pointer with the smaller height
+              to get the most water in the next container
+            - Also, keep track of the max volume of water held by any container
 
-        Time Complexity: O(N)        
+        Time Complexity: O(N)
+        Space Complexity: O(1)
         """
         
         # Init the two pointers on opposite ends of the list `height`
-        left, right = 0, len(height)-1
+        left, right = 0, len(height) - 1
         most_water = 0
         
-        # Iterate until thw two pointers cross over
+        # Iterate until the two pointers cross over
         while left < right:
             
             # The max level of water the container can hold depends on the shortest height of the container

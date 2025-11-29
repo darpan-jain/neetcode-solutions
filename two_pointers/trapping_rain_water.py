@@ -8,7 +8,7 @@ from typing import List
 class Solution:
     def trap(self, height: List[int]) -> int:
         """
-        Approach: Use two pointers to traverse the height array from both ends.
+        Approach: Use two pointers to traverse the height array from both ends
             
             1. Init two pointers on the two ends of the list and move the pointers towards each other, based on the comparison of `leftMax` and `rightMax`
                 - If `leftMax < rightMax`, it means the left side is shorter, so we can safely calculate the water trapped 
@@ -32,7 +32,7 @@ class Solution:
         total_water = 0
 
         # Initialize two pointers `l` and `r` at the start and end of the `height` array
-        l, r = 0, len(height)-1
+        l, r = 0, len(height) - 1
 
         # Maintain `leftMax` and `rightMax` to keep track of the maximum heights encountered from the left and right sides
         leftMax, rightMax = height[l], height[r]
