@@ -9,18 +9,20 @@ class Solution:
             Use a sliding window to compare the count of the characters in each string.
             This is similar to Finding Anagrams in a string, but order doesn't matter here since we are looking for permutations.
         
-            Brute Force:
-                Create the character count of `s1` and then for each substring of length `len(s1)` in `s2`,
-                create the character count and compare with `s1`'s character count.
-                Time Complexity: O(26 * N) = O(N)
-                Space Complexity: O(N)
+        Brute Force:
+            Create the character count of `s1` and then for each substring of length `len(s1)` in `s2`,
+            create the character count and compare with `s1`'s character count.
+
+        Time Complexity: O(26 * N) = O(N)
+        Space Complexity: O(N)
+        
+        Optimized (implemented below):
+            Maintain a variable `matches` that keeps track of how many characters have the same count in both `s1` and `s2`
+            Then use a sliding window of size `len(s1)` to traverse through `s2` and update the character count and `matches` variable accordingly.
+            If at any point `matches` becomes 26, then we have found a permutation of `s1` in `s2`
             
-            Optimized (implemented below):
-                Maintain a variable `matches` that keeps track of how many characters have the same count in both `s1` and `s2`
-                Then use a sliding window of size `len(s1)` to traverse through `s2` and update the character count and `matches` variable accordingly.
-                If at any point `matches` becomes 26, then we have found a permutation of `s1` in `s2`
-                Time Complexity: O(26) + O(N) = O(N) - which is better than brute force approach
-                Space Complexity: O(1) - since we are using fixed size arrays of size
+        Time Complexity: O(26) + O(N) = O(N) - which is better than brute force approach
+        Space Complexity: O(1) - since we are using fixed size arrays of size
         """
         
         # Edge case where `s1` is longer than `s2`, so No permutations of `s1` can exist in `s2`
