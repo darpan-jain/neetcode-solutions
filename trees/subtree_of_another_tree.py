@@ -15,11 +15,13 @@ class TreeNode:
         self.left = left
         self.right = right
 
+
 class Solution:
-    
     """
-    Approach: Recursive DFS with helper function to check if two given trees are the same.
+    Approach: Recursive DFS with helper function to check if two given trees are the same
+    
     Time Complexity: O(root * subRoot)
+    Space Complexity: O(H), where H is the height of the tree due to recursion stack
     """
     
     def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
@@ -50,8 +52,7 @@ class Solution:
         if not p and not q:
             return True
         
-        if (not p or not q) and (p.val != q.val):
+        if (not p or not q) or (p.val != q.val):
             return False
         
         return self.isSameTree(p.right, q.right) and self.isSameTree(p.left, q.left)
-    
