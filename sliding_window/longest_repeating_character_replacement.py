@@ -5,29 +5,28 @@ Question: https://leetcode.com/problems/longest-repeating-character-replacement/
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
         """
-        Approach: 
-            Use Sliding window approach with two pointers. 
+        Approach: Sliding window approach with two pointers
             
-            Both pointers start from element 0 and the right pointer is moved further right,
-            untilwe meet the condition where -> number of replacements required in current window <= `k`
+            - Both pointers start from element 0 and the right pointer is keeps sliding right for every iteration
+              until the condition is satisfied, where -> number of replacements required in current window <= k
         
-            Here, the number of replacements required should be less than the max allowed replacements (i.e. `k`),
+            - Here, the number of replacements required should be less than the max allowed replacements (i.e. `k`),
             which is calculated using "current window size - count of most occuring character in the window"
-                -> `(r - l + 1) - max(count.values())`
-
-            # Why is `max(count.values())` used?
-                -> Since we can replace any ONE character `k` times, so we consider the 
-                   most occuring character in the window for the replacements
+                - `(r - l + 1) - max(count.values())`
+            
+            - Why is `max(count.values())` used?
+                - Since we can replace any ONE character `k` times, so we consider the 
+                  most occuring character in the window for the replacements
         
         Time complexity: O(N)
         Space complexity: O(1) - since the count dict will have at most 26 characters
         """
+
+        # Result variable to store the max length of valid window found
+        max_len = 0
         
         # Dict `count` to store the frequency of the characters in the current window
         count = {}
-        
-        # Result variable to store the max length of valid window found
-        max_len = 0
         
         # Left pointer starting at index 0
         l = 0
@@ -39,7 +38,7 @@ class Solution:
             count[curr_char] = 1 + count.get(curr_char, 0)
             
             # Make the window valid if it's not, by moving the left pointer (after considering the possible replacements)
-            # `k` possible replacements are also considered using `(windowLen - max occuring char in the window)` is <= k
+            # `k` possible replacements are also considered using `(windowLen - max occuring char in the window) <= k`
             while (r - l + 1) - max(count.values()) > k:
 
                 # If not valid window, we remove the character at the left pointer,
@@ -48,6 +47,6 @@ class Solution:
                 l += 1
 
             # Update the max_len by comparing with current window size
-            max_len = max(max_len, r-l+1)
-                   
+            max_len = max(max_len, r - l + 1)
+
         return max_len

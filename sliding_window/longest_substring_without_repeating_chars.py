@@ -1,15 +1,17 @@
-"""
+'''
 Question: https://leetcode.com/problems/longest-substring-without-repeating-characters/
-"""
+'''
 
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        
         """ 
         Approach 1: Sliding window with two pointers. Maintain a character set representing all the
         characters inside the window. If character repeats in a window, move the left pointer until
         the window is valid again i.e., no repeating characters in the window.
+
+        Time Complexity: O(N)
+        Space Complexity: O(min(M,N)) where M is the size of the charset
         """
         
         # Charset to maintain the non-repeating sequence in the sliding window
@@ -17,7 +19,8 @@ class Solution:
         
         # Left pointer that does not move until we encounter a duplicate character
         l = 0
-        
+
+        # Result variable
         max_len = 0
         
         # Move the right pointer while the left stays constant for the sliding window
@@ -37,16 +40,20 @@ class Solution:
             charSet.add(s[r])
             
             # Update the max length of the subseq so far
-            curr_len = r-l+1
+            curr_len = r - l + 1
             max_len = max(max_len, curr_len)
                 
         return max_len
+                
+        """ 
+        Approach 2: Also sliding window
+
+        Time Complexity: O(N)
+        Space Complexity: O(N)
+        """
         
-        
-        """ Approach 2: Also sliding window approach: O(n) time complexity """
-        
-#         # Init two pointers - 'start' stays constant (represents start of the current substring), 
-#         # and 'j' moves to the right checking to compare the characters and trying to
+#         # Init two pointers - `start` stays constant (represents start of the current substring), 
+#         # and `j` moves to the right checking to compare the characters and trying to
 #         # build the longest substring
 #         start = 0
 #         # Dict that stores the last seen index of the characters in the string
@@ -54,27 +61,26 @@ class Solution:
 #         # Stores the max length of the non-repeating substring
 #         max_len = 0
         
-#         # 'j' moves from start to end of the string
+#         # `j` moves from start to end of the string
 #         for j, c in enumerate(s):
 #             # Checks if the current char has been repeated or not
 #             if c in chars:
 #                 '''
-#                 If repeated, move 'start' to the right.
-#                 Why do 'max'? Because 'start' should always move to the right and doing
-#                 a 'max' ensures that (since it'll always pick the bigger value i.e. to the right)
+#                 If repeated, move `start` to the right
+#                 Why do `max`? Because 'start' should always move to the right and doing
+#                 a `max` ensures that (since it'll always pick the bigger value i.e. to the right)
 #                 '''
-#                 start = max ( start, chars[c] + 1 )
+#                 start = max (start, chars[c] + 1)
             
-#             # If curr character is not repeated, then calculate the new 'max_len'
-#             max_len = max( max_len, j - start + 1 )
-#             # and also add the curr character to the used 'chars' dict with 
-#             # the index of latest occurrence
+#             # If curr character is not repeated, then calculate the new `max_len`
+#             max_len = max(max_len, j - start + 1)
+#             # Also add the curr character to the used `chars` dict with the index of latest occurrence
 #             chars[c] = j
             
 #         return max_len        
         
         
-        """ Approach 3: Same approach 2, more concise implementation """
+        """ Approach 3: Same as approach 2, more concise implementation """
         
 #         # Dict to store the index of each character while iterating the input string
 #         chars = {}
