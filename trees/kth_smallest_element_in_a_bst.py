@@ -22,8 +22,8 @@ class Solution:
         Why In-Order Traversal? 
         We need to visit the smallest elements first and L < N < R in BST
 
-        Time Complexity : O(H + k), where H is the height of the tree
-        Space Complexity: O(H), to store the stack
+        Time Complexity : O(N), where N is the number of nodes in the BST
+        Space Complexity: O(N), to store the stack
         """
 
         # `n` indicates the number of nodes visited. We stop at `n == k`

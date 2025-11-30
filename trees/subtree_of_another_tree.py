@@ -20,8 +20,8 @@ class Solution:
     """
     Approach: Recursive DFS with helper function to check if two given trees are the same
     
-    Time Complexity: O(root * subRoot)
-    Space Complexity: O(H), where H is the height of the tree due to recursion stack
+    Time Complexity: O(M * N), where M and N are the number of nodes in `root` and `subRoot` respectively
+    Space Complexity: O(M + N), to store the recursion stack for both trees
     """
     
     def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:

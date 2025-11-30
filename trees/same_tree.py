@@ -19,10 +19,12 @@ class TreeNode:
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         """
-        Approach: Use Recursive DFS, with stopping conditions for when the nodes are null or their values are unequal.
+        Approach: Use Recursive DFS, with stopping conditions for when the nodes are null or their values are unequal
 
-        Time Complexity: O(P+Q), where P and Q are the number of nodes in the two trees
-        Space Complexity: O(H), where H is the height of the tree (due to recursion stack)
+        Time Complexity : O(N)
+        Space Complexity: O(N) for the recursion stack
+            Best Case: O(log N) for balanced tree
+            Worst Case: O(N) for skewed tree
         """
 
         # Base case: if both are null, then equal

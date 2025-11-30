@@ -23,8 +23,10 @@ class Solution:
         From a root node, find the max between the left and the right subtrees. 
         The final max depth is `1 + the maximum between left subtree max depth and right subtree max depth`
 
-        Time Complexity: O(N) where N is the number of nodes in the tree
-        Space Complexity: O(H) where H is the height of the tree (due to recursion
+        Time Complexity : O(N), where N is the number of nodes in the tree
+        Space Complexity: O(H), where H is the height of the tree (due to recursion)
+            Best Case : O(log N) for balanced tree
+            Worst Case: O(N) for skewed / degenerated tree 
         """
         
         # Base case
@@ -44,8 +46,8 @@ class Solution:
                 - Increment the level by 1 (since we are going level by level i.e. breadth-wise)
                 - Continue until queue is empty
         
-        Time Complexity: O(N) where N is the number of nodes in the tree
-        Space Complexity: O(W) where W is the maximum width of the tree (i.e. maximum number of nodes at any level)
+        Time Complexity: O(N), where N is the number of nodes in the tree
+        Space Complexity: O(N)
         """
 
         # Init level and add the root to the deque

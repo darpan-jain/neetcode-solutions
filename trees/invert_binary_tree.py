@@ -17,7 +17,10 @@ class TreeNode:
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         """
-        Approach: Use Recursive DFS to swap the children of the root.
+        Approach: Use Recursive DFS to swap the children of the root
+
+        Time Complexity: O(N)
+        Space Complexity: O(N), for the recursion stack
         """
         
         # Base case for recursion

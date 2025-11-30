@@ -19,7 +19,7 @@ class Solution:
         """
         Approach: The Lowerst Common Ancestor (LCA) is the node in the tree where the split occurs for `p` and `q` nodes in a Binary Search Tree (BST)
         
-        Time Complexity : O(log N), since we search the BST with DFS instead of entirely iterating it (which would take O(N) time)
+        Time Complexity : O(H), where H is the height of the tree
         Space Complexity: O(1), since we are not using any additional data structures that grow with input size
         """
         

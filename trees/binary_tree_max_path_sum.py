@@ -26,8 +26,8 @@ class Solution:
           - 2. Calculate the max path sum that ENDS at current node and includes both subtrees (with split) - stored in `res`
         - 3. Keep track of the global maximum using the `res` list
         
-        Time Complexity: O(N), where `N` is the number of nodes in the tree
-        Space Complexity: O(H), where `H` is the height of the tree (due to recursion stack)
+        Time Complexity: O(N), where N is the number of nodes in the tree
+        Space Complexity: O(N), to store the recursion stack
         """
         
         # To store the maximum path sum found so far
