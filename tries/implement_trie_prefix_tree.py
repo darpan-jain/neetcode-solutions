@@ -1,7 +1,6 @@
-"""
+'''
 Question: https://leetcode.com/problems/implement-trie-prefix-tree/
-"""
-
+'''
 
 class TrieNode:
     """
@@ -31,7 +30,7 @@ class Trie:
             
             # Move 'cur' to the children of the current character
             cur = cur.children[c]
-            
+
         # Finally, once you insert all characters, 
         # set the `endOfWord` flag for the last character
         cur.endOfWord = True

@@ -14,26 +14,31 @@ class TrieNode:
     def __init__(self):
         self.children = {}
         self.isWord = False
-        self.refs = 0
+        self.refs = 0 # To keep track of how many words pass through this node
 
     def addWord(self, word):
-        cur = self
-        cur.refs += 1
+        cur = self # Start from the root node, i.e., `self`
+        cur.refs += 1 # Increment the refs count for the root node
+
         for c in word:
             if c not in cur.children:
                 cur.children[c] = TrieNode()
+            
             cur = cur.children[c]
+            # Increment the refs count for each node in the path of the word
             cur.refs += 1
+
         cur.isWord = True
 
     def removeWord(self, word):
         cur = self
         cur.refs -= 1
+
         for c in word:
             if c in cur.children:
                 cur = cur.children[c]
+                # Decrement the refs count for each node in the path of the word (since removing)
                 cur.refs -= 1
-
 
 class Solution:
     def findWords(self, board: List[List[str]], words: List[str]) -> List[str]:
@@ -54,12 +59,12 @@ class Solution:
 
             # Base case for stopping the DFS recursion
             if (
-                r not in range(ROWS) 
-                or c not in range(COLS)
-                or board[r][c] not in node.children
-                or node.children[board[r][c]].refs < 1
-                or (r, c) in visit
-            ):
+                    r not in range(ROWS) or # Out of bounds row
+                    c not in range(COLS) or # Out of bounds column
+                    board[r][c] not in node.children or # Current character not in Trie children
+                    node.children[board[r][c]].refs < 1 or # No words pass through this node
+                    (r, c) in visit # Current cell already visited
+                ):
                 return
 
             # Add the current cell to the visited set (to avoid revisiting the same elements on the board)
@@ -83,7 +88,7 @@ class Solution:
             dfs(r, c + 1, node, word)
             dfs(r, c - 1, node, word)
 
-            # After seacrching all 4 directions, remove the current cell from the visited set
+            # After searching all 4 directions, remove the current cell from the visited set (to allow other paths to use this cell)
             visit.remove((r, c))
 
 

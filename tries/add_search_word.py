@@ -39,19 +39,19 @@ class WordDictionary:
         
 
     def search(self, word: str) -> bool:
-        # Perform normal search as in https://leetcode.com/problems/implement-trie-prefix-tree/ for 
-        # characters but for '.' we use DFS to search all the possible values.
+        # Perform normal search as in https://leetcode.com/problems/implement-trie-prefix-tree/ 
+        # but for '.' we use DFS to search all the possible values.
         
         # If we are searching for a word longer than what exists in the Trie, return False
         if len(word) > self.max_word_len:
             return False
         
         # DFS search for the word
-        def dfs(j, root):
+        def dfs(start_idx, root):
             cur = root
             
-            # We start searching from index `j` in the word
-            for i in range(j, len(word)):
+            # We start searching from index `start_idx` in the word
+            for i in range(start_idx, len(word)):
                 c = word[i]
                 
                 # Recursive search for when "." is present in the search string
@@ -60,8 +60,8 @@ class WordDictionary:
                     for child in cur.children.values():
                        
                        # Since "." can be any character, perform a recursive DFS for the remaining characters
-                        if dfs(i+1, child):
-                             # If the rest of the characters in the children, then we have a match
+                        if dfs(i + 1, child):
+                             # If the rest of the characters are in the children, then we have a match
                              # Since last recursive call with return True and enter this `if` condition
                             return True
                     
