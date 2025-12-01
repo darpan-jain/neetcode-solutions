@@ -55,9 +55,10 @@ A full list of the topics and questions covered in this repo (so far).
 
 |     |             |
 | --- | ----------- |
-| [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [min_in_rotated_array.py](binary_search/min_in_rotated_array.py)              |
-| [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)             | [search_in_rotated_array.py](binary_search/search_in_rotated_sorted_array.py) |
-| [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)                                   | [koko_eating_bananas.py](binary_search/koko_eating_bananas.py)                |
+| [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)                                       | [min_in_rotated_array.py](binary_search/min_in_rotated_array.py)              |
+| [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)                                                   | [search_in_rotated_array.py](binary_search/search_in_rotated_sorted_array.py) |
+| [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)                                                                         | [koko_eating_bananas.py](binary_search/koko_eating_bananas.py)                |
+| [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [first_and_last_position.py](binary_search/first_and_last_position.py)        |
 
 ## [Linked Lists](linked_lists)
 
