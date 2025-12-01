@@ -21,6 +21,7 @@ A full list of the topics and questions covered in this repo (so far).
 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)  | [longest_consecutive_sequence.py](arrays_and_hashing/longest_consecutive_sequence.py) |
 | [Count Vowel Strings in Ranges](https://leetcode.com/problems/count-vowel-strings-in-ranges) | [count_vowel_strings_in_ranges.py](arrays_and_hashing/count_vowel_strings_in_ranges.py) |
 | [Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes/)                    | [rank_teams_by_votes.py](arrays_and_hashing/rank_teams_by_votes.py) |
+| [High Accessed Employees](https://leetcode.com/problems/high-access-employees/)              | [highly_access_employees.py](arrays_and_hashing/highly_access_employees.py) |
 
 ## [Two Pointers](two_pointers)
 
