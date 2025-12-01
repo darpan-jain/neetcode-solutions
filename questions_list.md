@@ -39,16 +39,16 @@ A full list of the topics and questions covered in this repo (so far).
 | [Best time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)                           | [best_buy_sell_stock.py](sliding_window/best_buy_sell_stock.py) |
 | [Longest Substring w/o Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [longest_substr_without_repeating_chars.py](sliding_window/longest_substr_without_repeating_chars.py) |
 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)           | [longest_repeating_character_replacement.py](sliding_window/longest_repeating_character_replacement.py) |
-| [Permuatation in String](https://leetcode.com/problems/permutation-in-string/submissions/)                                  | [permutation_in_string.py](sliding_window/permutation_in_string.py) |
+| [Permuatation in String](https://leetcode.com/problems/permutation-in-string/submissions/)                                  | [permutation_in_string.py](sliding_window/permutation_in_string.py)       |
 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)                                         | [minimum_window_substring.py](sliding_window/minimum_window_substring.py) |
-| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                             | [sliding_window_maximum.py](sliding_window/sliding_window_maximum.py) |
+| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                             | [sliding_window_maximum.py](sliding_window/sliding_window_maximum.py)     |
 
 ## [Stack](stack)
 
 |     |             |
 | --- | ----------- |
-| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                               | [valid_parentheses.py](stack/valid_parentheses.py) |
-| [Min Stack](https://leetcode.com/problems/min-stack/)                                               | [min_stack.py](stack/min_stack.py)                 |
+| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                               | [valid_parentheses.py](stack/valid_parentheses.py)             |
+| [Min Stack](https://leetcode.com/problems/min-stack/)                                               | [min_stack.py](stack/min_stack.py)                             |
 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [reverse_polish_notation.py](stack/reverse_polish_notation.py) |
 
 ## [Binary Search](binary_search)
