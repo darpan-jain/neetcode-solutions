@@ -10,15 +10,17 @@ A full list of the topics and questions covered in this repo (so far).
 
 |     |             |
 | --- | ----------- |
-| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                     | [contains_duplicate.py](arrays_and_hashing/contains_duplicate.py) |
-| [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                               | [valid_anagram.py](arrays_and_hashing/valid_anagram.py) |
-| [Two Sum](https://leetcode.com/problems/two-sum/)                                           | [two_sum.py](arrays_and_hashing/two_sum.py) |
-| [Group Anagrams](https://leetcode.com/problems/group-anagrams/)                             | [group_anagrams.py](arrays_and_hashing/group_anagrams.py) |
-| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)           | [top_k_frequent_elements.py](arrays_and_hashing/top_k_frequent_elements.py) |
-| [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [product_of_array_except_self.py](arrays_and_hashing/product_of_array_except_self.py) |
-| [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                                 | [valid_sudoku.py](arrays_and_hashing/valid_sudoku.py) |
-| [Encode & Decode Strings](https://neetcode.io/problems/string-encode-and-decode)            | [encode_decode_strings.py](arrays_and_hashing/encode_decode_strings.py) |
-| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | [longest_consecutive_sequence.py](arrays_and_hashing/longest_consecutive_sequence.py) |
+| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)                      | [contains_duplicate.py](arrays_and_hashing/contains_duplicate.py) |
+| [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                | [valid_anagram.py](arrays_and_hashing/valid_anagram.py) |
+| [Two Sum](https://leetcode.com/problems/two-sum/)                                            | [two_sum.py](arrays_and_hashing/two_sum.py) |
+| [Group Anagrams](https://leetcode.com/problems/group-anagrams/)                              | [group_anagrams.py](arrays_and_hashing/group_anagrams.py) |
+| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)            | [top_k_frequent_elements.py](arrays_and_hashing/top_k_frequent_elements.py) |
+| [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)  | [product_of_array_except_self.py](arrays_and_hashing/product_of_array_except_self.py) |
+| [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                                  | [valid_sudoku.py](arrays_and_hashing/valid_sudoku.py) |
+| [Encode & Decode Strings](https://neetcode.io/problems/string-encode-and-decode)             | [encode_decode_strings.py](arrays_and_hashing/encode_decode_strings.py) |
+| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)  | [longest_consecutive_sequence.py](arrays_and_hashing/longest_consecutive_sequence.py) |
+| [Count Vowel Strings in Ranges](https://leetcode.com/problems/count-vowel-strings-in-ranges) | [count_vowel_strings_in_ranges.py](arrays_and_hashing/count_vowel_strings_in_ranges.py) |
+| [Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes/)                    | [rank_teams_by_votes.py](arrays_and_hashing/rank_teams_by_votes.py) |
 
 ## [Two Pointers](two_pointers)
 
