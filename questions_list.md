@@ -82,6 +82,14 @@ A full list of the topics and questions covered in this repo (so far).
 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)             | [binary_tree_level_order_traversal.py](trees/binary_tree_level_order_traversal.py) |
 | [Validate Binary Search Tree](https://leetcode.com/problems/valid-binary-search-tree/)                            | [valid_bst.py](trees/valid_bst.py) |
 
+## [Heap / Priority Queue](heap_priority_queue)
+
+|     |             |
+| --- | ----------- |
+| [Design Food Rating System](https://leetcode.com/problems/design-a-food-rating-system/) | [design_a_food_rating_system.py](heap_priority_queue/design_a_food_rating_system.py) |
+| [Stock Price Fluctuation](https://leetcode.com/problems/stock-price-fluctuation/)       | [stock_price_fluctuation.py](heap_priority_queue/stock_price_fluctuation.py)         |
+
+
 ## [Backtracking](backtracking)
 
 |     |             |
