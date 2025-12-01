@@ -1,7 +1,22 @@
+'''
+Question: https://leetcode.com/problems/number-of-islands/
+'''
+
+
+from typing import List
+
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
+        """
+        Approach 1: Using Recursive DFS
+
+            - Iterate through all cells in the grid until you find a 1 (land)
+            - When found, increment the island count and call the DFS function on that cell's position
+            - Within the DFS function, continue searching in all 4 directions through recursive calls, to find the edge of the island
         
-        ''' Approach 1: Using Recursive DFS '''
+        Time Complexity : O(M * N), where M and N are the number of rows and cols
+        Space Complexity: O(M * N), to store the recursive stack
+        """
         
         # Empty case
         if not grid or not grid[0]:
@@ -18,18 +33,21 @@ class Solution:
             
             # Base case & main condition
             # Return if we encounter water i.e. "0", since island is over!
-            if r not in range(ROWS) or c not in range(COLS) or grid[r][c] == "0" or (r, c) in visit:
+            if r not in range(ROWS) or \
+               c not in range(COLS) or \
+               grid[r][c] == "0" or \
+               (r, c) in visit:
                 return
             
             # Remember to add current element to `visit`
             visit.add((r, c))
 
-            # Recursively iterate in all four directions for DFS
-            directions = [[0, 1], [0, -1], [1, 0], [-1, 0]]
-            for dr, dc in directions:
-                # Recursively call DFS in all four directions
-                dfs(r + dr, c + dc)
-                
+            # Recursively iterate in all four directions for DFS to reach the edge of the island of 1s
+            dfs(r + 1, c)
+            dfs(r - 1, c)
+            dfs(r, c + 1)
+            dfs(r, c - 1)
+
             
         ## Main loop while running DFS - used to update the `islands` result
         for r in range(ROWS):
@@ -43,8 +61,11 @@ class Solution:
         # Finally return result
         return islands
 
-        '''
-        ## Approach 2: Using Iterative BFS
+
+        """
+        Approach 2: Use Iterative BFS
+            
+        """
         
         # Edge case for empty grid
         if not grid:
@@ -94,4 +115,3 @@ class Solution:
                     islands += 1
                     
         return islands
-    '''

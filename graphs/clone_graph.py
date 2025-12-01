@@ -1,20 +1,27 @@
-"""
-# Definition for a Node.
+'''
+Question: https://leetcode.com/problems/clone-graph/description/
+'''
+
+from typing import Optional
+
+
+# Definition for a Node
 class Node:
     def __init__(self, val = 0, neighbors = None):
         self.val = val
         self.neighbors = neighbors if neighbors is not None else []
-"""
 
-from typing import Optional
+
 class Solution:
     def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
-        '''
-        Use Hashmap and DFS to create a deepcopy of the input graph.
-        Hashmap is created to ensure that we are not cloning nodes repeatedly.
+        """
+        Approach: 
+            - Use Hashmap and Recursive DFS to create a deepcopy of the input graph
+            - Hashmap is created to ensure that we are not cloning nodes repeatedly
 
-        Time complexity: O(n) where n = number of edges(E) + number of vertices(V)
-        '''
+        Time Complexity : O(V + E), where V is number of vertices and E is number of edges
+        Space Complexity: O(V)
+        """
 
         # Hashmap to keep track of the all clones being made of the original node    
         oldToNew = {}
@@ -22,12 +29,14 @@ class Solution:
         # Clone input `curr_node` using Recursive DFS
         def clone(curr_node):
 
-            # Return the already created copy in the `node` is present in `oldToNew`
+            # Return the already created copy in the `node` present in `oldToNew`
             if curr_node in oldToNew:
                 return oldToNew[curr_node]
 
+            # If not present -
             # Create a deepcopy of the node and add it to the hashmap
             copy = Node(curr_node.val)
+
             # Add `copy` to the cloned node
             oldToNew[curr_node] = copy
 
@@ -38,5 +47,5 @@ class Solution:
             # Finally, return the completed deepcopy of the current `node`
             return copy
 
-        ## Clone the `root node` if its not empty
+        # Start the cloning with the root node, return None if its empty
         return clone(node) if node else None
