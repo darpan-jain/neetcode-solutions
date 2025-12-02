@@ -10,12 +10,14 @@ class Solution:
     Approach: Backtracking + Depth First Search (DFS)
 
         - Iterate over each cell in the board as a potential starting point for the word search
-        - For each cell, initiate a DFS to explore all possible paths to match the word
+            - For each cell, initiate a DFS to explore all possible paths to match the word
+        
         - During DFS, check if the current cell matches the current character of the word
-        - If it matches, mark the cell as visited (e.g., by changing its value temporarily)
-        - Recursively explore all four possible directions (up, down, left, right)
-        - If the entire word is matched, return True
-        - If a path does not lead to a solution, backtrack by unmarking the cell
+            - If it matches, mark the cell as visited (e.g., by changing its value temporarily)
+            - Recursively explore all four possible directions (up, down, left, right)
+            - If the entire word is matched, return True
+            - If a path does not lead to a solution, backtrack by unmarking the cell
+        
         - If no starting point leads to a successful match, return False
     
     Time Complexity: O(M * 4^N)

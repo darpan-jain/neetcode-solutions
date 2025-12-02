@@ -32,6 +32,7 @@ class Solution:
             k = (l + r) // 2
 
             # Calculate the total time taken to eat all bananas at the current eating speed `k`
+            # But it's a possible solution, so we store the value to `optimal_k`
             total_time = 0
             for p in piles:
                 # To go through a pile of size `p` at speed `k`, it would take `ceil(p / k)` hours 
